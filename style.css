@@ -1,4 +1,4 @@
-html, body {
+/*html, body {
   padding: 0px;
   margin: 0px;
 }
@@ -31,4 +31,34 @@ h1 {
   color: white;
   font-size: 72px;
   vertical-align: middle;
+}*/
+
+body {
+  background-image: url("images/background.jpg");
+  background-attachment: fixed;
+  font-family: 'Helvetica', sans-serif;
+  color: #333;
+}
+
+.photo {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.profile-pic {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+}
+
+.sites-bar {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.sites {
+  max-width: 65px;
+  max-height: 65px;
+  display: inline-block;
+  border-radius: 25%;
 }
