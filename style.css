@@ -1,38 +1,3 @@
-/*html, body {
-  padding: 0px;
-  margin: 0px;
-}
-
-.bg {
-  background: url('https://withanna.files.wordpress.com/2012/10/budapest-sky-via-withanna-wordpress-com.jpg') repeat;
-  width: 100%;
-  height: 400%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: -1;
-}
-
-img {
-  position: relative;
-  display: inline-block;
-  width: 30%;
-}
-
-.break {
-  background-color: rgba(255, 127, 80,.5);
-  width: 100%;
-  height: 400px;
-  display: block;
-  text-align: center;
-}
-
-h1 {
-  color: white;
-  font-size: 72px;
-  vertical-align: middle;
-}*/
-
 body {
   background-image: url("images/background.jpg");
   background-attachment: fixed;
@@ -49,6 +14,7 @@ body {
   max-width: 250px;
   max-height: 250px;
   border-radius: 50%;
+  clear: both;
 }
 
 .sites-bar {
@@ -61,4 +27,77 @@ body {
   max-height: 65px;
   display: inline-block;
   border-radius: 25%;
+}
+
+.left-text {
+  float: left;
+  margin-left: 100px;
+  max-width: 250px;
+  max-height: 600px;
+  clear: both;
+  color: #ffffff;
+}
+
+/*SLIDER*/
+
+.slider-wrap {
+  width: 720px;
+  height: 550px;
+  margin: 20px auto;
+}
+.slider {
+  overflow-x: scroll;
+}
+.holder {
+  width: 300%;
+}
+.slide {
+  float: left;
+  width: 720px;
+  height: 550px;
+  position: relative;
+  background-position: -100px 0;
+}
+.temp {
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  bottom: 15px;
+  left: 15px;
+  font-family: 'Helvetica', serif;
+  font-weight: 100;
+}
+#slide-0 {
+  background-image: url(http://sama-mc.com/med/wp-content/uploads/2013/10/dental-exam.jpg);
+}
+#slide-1 {
+  background-image: url(http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg);
+}
+#slide-2 {
+  background-image: url(http://farm8.staticflickr.com/7382/8732044638_9337082fc6_z.jpg);
+}
+.slide:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(transparent, black);
+}
+.slider-nav {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+.slider-nav a {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: #ddd;
+  overflow: hidden;
+  text-indent: -9999px;
+  border-radius: 50%;
+}
+.slider-nav a.active {
+  background: #999;
 }
