@@ -68,13 +68,13 @@ body {
   font-weight: 100;
 }
 #slide-0 {
-  background-image: url(http://sama-mc.com/med/wp-content/uploads/2013/10/dental-exam.jpg);
+  background-image: url(http://placekitten.com/720/550);
 }
 #slide-1 {
-  background-image: url(http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg);
+  background-image: url(http://placepuppy.it/720/550);
 }
 #slide-2 {
-  background-image: url(http://farm8.staticflickr.com/7382/8732044638_9337082fc6_z.jpg);
+  background-image: url('images/ic_music.png');
 }
 .slide:before {
   content: "";
