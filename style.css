@@ -1,5 +1,5 @@
 body {
-  background-image: url("images/background.jpg");
+  background-image: url('images/background.jpg');
   background-attachment: fixed;
   font-family: 'Helvetica', sans-serif;
   color: #333;
@@ -71,7 +71,7 @@ body {
   background-image: url(http://placekitten.com/720/550);
 }
 #slide-1 {
-  background-image: url(http://placepuppy.it/720/550);
+  background-image: url('images/emochat.png');
 }
 #slide-2 {
   background-image: url('images/ic_music.png');
