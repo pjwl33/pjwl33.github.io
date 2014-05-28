@@ -9,6 +9,7 @@ a {text-decoration: none; color: #fffff0;}
 a:hover {color: #39aecf; transition: .8s all;}
 li:hover {color: #39aecf; transition: .8s all;}
 h1:hover {color: #39aecf; transition: .8s all;}
+h3 {margin-top: -15px;}
 i {color: #333; width: 25px;}
 li {
   display: inline;
@@ -80,11 +81,12 @@ li {
 }
 .slider-wrap {
   width: 920px;
-  height: 550px;
+  height: 575px;
   margin: 150px auto;
 }
 .slider {
   overflow-x: scroll;
+  overflow-y: hidden;
   border-radius: 1%;
   box-shadow: 0px 0px 2px #333;
 }
@@ -94,16 +96,30 @@ li {
 .slide {
   float: left;
   width: 920px;
-  height: 550px;
+  height: 575px;
   position: relative;
   background-position: -100px 0;
 }
 .temp {
   position: absolute;
-  font-size: 100px;
-  bottom: 15px;
+  font-size: 70px;
+  margin-top: 375px;
   left: 15px;
   font-weight: 100;
+}
+.temp2 {
+  position: absolute;
+  font-size: 30px;
+  left: 20px;
+  margin-top: 475px;
+  color: #fffff0;
+}
+.temp3 {
+  position: absolute;
+  font-size: 30px;
+  left: 20px;
+  margin-top: 525px;
+  color: #fffff0;
 }
 #slide-0 {
   background-image: url('images/nyfi.png');
@@ -126,6 +142,7 @@ li {
 
 /*contact & sites*/
 #email {color: #333;}
+#email:hover {color: #39aecf; transition: .8s all;}
 #contacts {
   text-align: center;
   margin-top: 155px;
