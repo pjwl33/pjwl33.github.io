@@ -12,23 +12,35 @@
         <h1 id="header-name"><a href="http://pjlee.me/">Paul Jinwoo Lee</a></h1>
       </div>
       <ul class="nav">
-        <li>About</li>
-        <li>Contact</li>
+        <li onclick="showDiv('about-wrap')">About</li>
+        <li onclick="showDiv('contact-wrap')">Contact</li>
         <li><a target="_blank" href="https://drive.google.com/file/d/0B7tpjy9otAJoNjRneDJYMFVXQkE/edit?usp=sharing">Resume</a></li>
       </ul>
     </div>
   </div>
 
   <!-- personal sites -->
-  <h1 id="about">About Me</h1>
+  <h1 id="about" onclick="showDiv('about-wrap')">About Me</h1>
   <div id="about-wrap">
     <div class="photo">
-      <img id="profile" src="images/personal.png" class="profile-pic"></a>
+      <img src="images/personal.png" class="profile-pic">
+    </div>
+    <div class="info">
+      <p class="info-text">
+        My name is Paul Jinwoo Lee and I recently converted to Web Developer-ism. <br>
+        <br>
+        In May 2014, I graduated from General Assembly's <a target="_blank" class="info-link" href="https://generalassemb.ly/education/web-development-immersive">Web Development Immersive</a>, where I learned full-stack development. <br>
+        <br>
+         For 2 years prior to GA, I was on the recruiting, biz dev, and project management side of the tech industry, before I dove into the world of web development. <br>
+        <br>
+        I am constantly looking to connect with passionate and intelligent developers to continue my growth as a technologist, tinkerer, and creative thinker.
+
+      </p>
     </div>
   </div>
 
   <!-- projects slider -->
-  <h1 id="projects">Projects</h1>
+  <h1 id="projects" onclick="showDiv('project-wrap')">Projects</h1>
   <div id="project-wrap">
     <div class="slider-wrap">
       <div class="slider" id="slider">
@@ -54,7 +66,7 @@
   </div>
 
   <!-- contacts -->
-  <h1 id="contacts">Get in Touch</h1>
+  <h1 id="contacts" onclick="showDiv('contact-wrap')">Get in Touch</h1>
   <div id="contact-wrap">
     <h2>Email</h2>
     <h3><a href="mailto:paul.leejw@gmail.com" id="email">paul.leejw@gmail.com</a></h3>
