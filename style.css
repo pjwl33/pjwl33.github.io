@@ -70,7 +70,7 @@ li {
   margin-bottom: -135px;
 }
 .slider-wrap {
-  width: 720px;
+  width: 920px;
   height: 550px;
   margin: 150px auto;
 }
@@ -84,7 +84,7 @@ li {
 }
 .slide {
   float: left;
-  width: 720px;
+  width: 920px;
   height: 550px;
   position: relative;
   background-position: -100px 0;
@@ -103,7 +103,7 @@ li {
   background-image: url('images/emochat.png');
 }
 #slide-2 {
-  background-image: url('images/ic_music.png');
+  background-image: url('images/groupprov.png');
 }
 .slide:before {
   content: "";
