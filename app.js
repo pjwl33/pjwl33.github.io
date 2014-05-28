@@ -1,5 +1,17 @@
 $(document).ready(function() {
+  $('#about-wrap').hide();
+  $('#project-wrap').hide();
+  $('#contact-wrap').hide();
 
+  $('#about').click(function() {
+    $('#about-wrap').toggle(450);
+  });
+  $('#projects').click(function() {
+    $('#project-wrap').toggle(450);
+  });
+  $('#contacts').click(function() {
+    $('#contact-wrap').toggle(450);
+  });
 
   var slider = {
   el: {
@@ -28,20 +40,4 @@ $(document).ready(function() {
     },
   };
   slider.init();
-
-  $('#about-wrap').hide();
-  $('#project-wrap').hide();
-  $('#contact-wrap').hide();
-
-  $('#about').click(function() {
-    $('#about-wrap').toggle(450);
-  });
-
-  $('#projects').click(function() {
-    $('#project-wrap').toggle(450);
-  });
-
-  $('#contacts').click(function() {
-    $('#contact-wrap').toggle(450);
-  });
 });
