@@ -11,6 +11,12 @@ a {text-decoration: none; color: #ffffff;}
   text-align: center;
   margin-top: 200px;
 }
+#about {
+  margin-top: 155px;
+  margin-bottom: -175px;
+  margin-left: -25px;
+  text-align: center;
+}
 .profile-pic {
   max-width: 250px;
   max-height: 250px;
@@ -75,6 +81,12 @@ li {
 }
 
 /*slider*/
+#projects {
+  text-align: center;
+  margin-top: 155px;
+  margin-bottom: -155px;
+  margin-left: -25px;
+}
 .slider-wrap {
   width: 720px;
   height: 550px;
@@ -82,6 +94,8 @@ li {
 }
 .slider {
   overflow-x: scroll;
+  border-radius: 1%;
+  box-shadow: 0px 0px 2px #333;
 }
 .holder {
   width: 300%;
