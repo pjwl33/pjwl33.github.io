@@ -108,7 +108,7 @@ li {
   font-weight: 100;
 }
 #slide-0 {
-  background-image: url(http://placekitten.com/720/550);
+  background-image: url('images/nyfi.png');
 }
 #slide-1 {
   background-image: url('images/emochat.png');
