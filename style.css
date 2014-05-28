@@ -1,5 +1,5 @@
 body {
-  background-image: url('images/background.jpg');
+  background-image: url('images/skulls.png');
   background-attachment: fixed;
   font-family: 'Helvetica', sans-serif;
   color: #333;
@@ -38,12 +38,52 @@ body {
   color: #ffffff;
 }
 
+.fixed_header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #333;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.header_content {
+  width: 980px;
+  margin: 0 auto;
+}
+.logo {
+  float: left;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: left center;
+}
+h1 {
+  margin: 0;
+  padding-left: 35px;
+  line-height: 50px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+
+.nav {
+  margin: 0;
+  float: right;
+}
+li {
+  display: inline;
+  line-height: 50px;
+  margin-left: 10px;
+  font-size: 14px;
+}
 /*SLIDER*/
 
 .slider-wrap {
   width: 720px;
   height: 550px;
-  margin: 20px auto;
+  margin: 150px auto;
 }
 .slider {
   overflow-x: scroll;
@@ -84,20 +124,4 @@ body {
   width: 100%;
   height: 40%;
   background: linear-gradient(transparent, black);
-}
-.slider-nav {
-  text-align: center;
-  margin: 10px 0 0 0;
-}
-.slider-nav a {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  background: #ddd;
-  overflow: hidden;
-  text-indent: -9999px;
-  border-radius: 50%;
-}
-.slider-nav a.active {
-  background: #999;
 }
