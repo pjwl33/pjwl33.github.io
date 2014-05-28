@@ -2,6 +2,7 @@ $(document).ready(function() {
   $('#about-wrap').hide();
   $('#project-wrap').hide();
   $('#contact-wrap').hide();
+  $('a').attr('target', '_blank');
 
   var slider = {
     el: {
