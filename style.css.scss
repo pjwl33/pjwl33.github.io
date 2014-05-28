@@ -4,14 +4,13 @@ body {
   font-family: 'Helvetica', sans-serif;
   color: #333;
 }
-
 a {text-decoration: none; color: #ffffff;}
 
+/* photo and sites */
 .photo {
   text-align: center;
   margin-top: 200px;
 }
-
 .profile-pic {
   max-width: 250px;
   max-height: 250px;
@@ -19,19 +18,16 @@ a {text-decoration: none; color: #ffffff;}
   border: 4px solid #333;
   clear: both;
 }
-
 .sites-bar {
   text-align: center;
   margin-top: 35px;
 }
-
 .sites {
   max-width: 65px;
   max-height: 65px;
   display: inline-block;
   border-radius: 25%;
 }
-
 .left-text {
   float: left;
   margin-left: 100px;
@@ -40,7 +36,6 @@ a {text-decoration: none; color: #ffffff;}
   clear: both;
   color: #ffffff;
 }
-
 .fixed_header {
   width: 100%;
   height: 50px;
@@ -51,7 +46,6 @@ a {text-decoration: none; color: #ffffff;}
   z-index: 2;
   color: #ffffff;
 }
-
 .header_content {
   width: 980px;
   margin: 0 auto;
@@ -69,7 +63,6 @@ h1 {
   font-size: 26px;
   text-transform: uppercase;
 }
-
 .nav {
   margin: 0;
   float: right;
@@ -81,8 +74,7 @@ li {
   font-size: 14px;
 }
 
-/*SLIDER*/
-
+/*slider*/
 .slider-wrap {
   width: 720px;
   height: 550px;
@@ -109,6 +101,10 @@ li {
   left: 15px;
   font-family: 'Helvetica', serif;
   font-weight: 100;
+  .code-links {
+    font-family: 'Helvetica', serif;
+    font-size: 55px;
+  }
 }
 #slide-0 {
   background-image: url('images/nyfi.png');
@@ -128,3 +124,4 @@ li {
   height: 40%;
   background: linear-gradient(transparent, black);
 }
+
