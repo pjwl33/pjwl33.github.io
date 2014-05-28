@@ -1,46 +1,25 @@
 body {
   background-image: url('images/skulls.png');
   background-attachment: fixed;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Ek Mukta', sans-serif;
   color: #333;
+  z-index: -1;
 }
-a {text-decoration: none; color: #ffffff;}
+a {text-decoration: none; color: #fffff0;}
+li {
+  display: inline;
+  line-height: 50px;
+  margin-left: 10px;
+  font-size: 14px;
+}
 
-/* photo and sites */
-.photo {
-  text-align: center;
-  margin-top: 200px;
-}
-#about {
-  margin-top: 155px;
-  margin-bottom: -175px;
-  margin-left: -25px;
-  text-align: center;
-}
-.profile-pic {
-  max-width: 250px;
-  max-height: 250px;
-  border-radius: 5%;
-  border: 4px solid #333;
-  clear: both;
-}
-.sites-bar {
-  text-align: center;
-  margin-top: 35px;
-}
-.sites {
-  max-width: 65px;
-  max-height: 65px;
-  display: inline-block;
-  border-radius: 25%;
-}
-.left-text {
-  float: left;
-  margin-left: 100px;
-  max-width: 250px;
-  max-height: 600px;
-  clear: both;
-  color: #ffffff;
+/* nav bar */
+#header-name {
+  margin: 0;
+  padding-left: 35px;
+  line-height: 50px;
+  font-size: 26px;
+  text-transform: uppercase;
 }
 .fixed_header {
   width: 100%;
@@ -50,7 +29,6 @@ a {text-decoration: none; color: #ffffff;}
   left: 0;
   background: #333;
   z-index: 2;
-  color: #ffffff;
 }
 .header_content {
   width: 980px;
@@ -62,30 +40,34 @@ a {text-decoration: none; color: #ffffff;}
   background-size: 25px 25px;
   background-position: left center;
 }
-h1 {
-  margin: 0;
-  padding-left: 35px;
-  line-height: 50px;
-  font-size: 26px;
-  text-transform: uppercase;
-}
 .nav {
   margin: 0;
   float: right;
 }
-li {
-  display: inline;
-  line-height: 50px;
-  margin-left: 10px;
-  font-size: 14px;
+
+/* photo and sites */
+.photo {
+  text-align: center;
+  margin-top: 200px;
+}
+#about {
+  margin-top: 155px;
+  margin-bottom: -175px;
+  text-align: center;
+}
+.profile-pic {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 5%;
+  border: 4px solid #333;
+  clear: both;
 }
 
 /*slider*/
 #projects {
   text-align: center;
   margin-top: 155px;
-  margin-bottom: -155px;
-  margin-left: -25px;
+  margin-bottom: -135px;
 }
 .slider-wrap {
   width: 720px;
@@ -109,11 +91,9 @@ li {
 }
 .temp {
   position: absolute;
-  color: white;
   font-size: 100px;
   bottom: 15px;
   left: 15px;
-  font-family: 'Helvetica', serif;
   font-weight: 100;
 }
 #slide-0 {
@@ -133,5 +113,23 @@ li {
   width: 100%;
   height: 40%;
   background: linear-gradient(transparent, black);
+}
+
+/*contact & sites*/
+#contact {
+  text-align: center;
+  margin-top: 155px;
+  margin-bottom: -155px;
+  color: #333;
+}
+.sites-bar {
+  text-align: center;
+  margin-top: 35px;
+}
+.sites {
+  max-width: 65px;
+  max-height: 65px;
+  display: inline-block;
+  border-radius: 25%;
 }
 

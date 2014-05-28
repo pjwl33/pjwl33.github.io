@@ -1,6 +1,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Ek+Mukta:400,800' rel='stylesheet' type='text/css'>
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="app.js"></script>
 </head>
@@ -8,42 +9,51 @@
   <div class="fixed_header">
     <div class="header_content">
       <div class="logo">
-        <h1><a href="http://pjlee.me/">Paul Jinwoo Lee</a></h1>
+        <h1 id="header-name"><a href="http://pjlee.me/">Paul Jinwoo Lee</a></h1>
       </div>
       <ul class="nav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about-wrap">About</a></li>
+        <li><a href="#project-wrap">Projects</a></li>
         <li><a target="_blank" href="https://drive.google.com/file/d/0B7tpjy9otAJoNjRneDJYMFVXQkE/edit?usp=sharing">Resume</a></li>
-        <li>Contact</li>
+        <li><a href="#contact-wrap">Contact</a></li>
       </ul>
     </div>
   </div>
 
   <!-- personal sites -->
-  <h1 id="about">About Me</h1>
-  <div class="photo">
-    <img src="images/personal.png" alt="" class="profile-pic"></a>
-  </div>
-  <div class="sites-bar">
-    <a target="_blank" href="https://www.facebook.com/pjwlee"><img src="images/facebook.svg" alt="" class="sites"></a>
-    <a target="_blank" href="https://twitter.com/pjwl33"><img src="images/twitter.png" alt="" class="sites"></a>
-    <a target="_blank" href="https://www.linkedin.com/in/pauljwlee"><img src="images/linkedin.png" alt="" class="sites"></a>
-  </div>
-  <div class="sites-bar">
-    <a target="_blank" href="https://github.com/pjwl33"><img src="images/Github.png" alt="" class="sites"></a>
-    <a target="_blank" href="https://angel.co/pjwl33"><img src="images/angellist.png" alt="" class="sites"></a>
-    <a target="_blank" href="http://www.meetup.com/nycRAK/"><img src="images/meetup.png" alt="" class="sites"></a>
+  <div id="about-wrap">
+    <h1 id="about">About Me</h1>
+    <div class="photo">
+      <img src="images/personal.png" alt="" class="profile-pic"></a>
+    </div>
   </div>
 
   <!-- projects slider -->
-  <h1 id="projects">Projects</h1>
-  <div class="slider-wrap">
-    <div class="slider" id="slider">
-      <div class="holder">
-        <a target="_blank" href="http://nyfi.herokuapp.com/"><div class="slide" id="slide-0"><span class="temp">NYfi</span></div></a>
-        <a target="_blank" href="http://emochat.herokuapp.com/"><div class="slide" id="slide-1"><span class="temp">Emochat</span></div></a>
-        <a target="_blank" href="http://groupprov.herokuapp.com/"><div class="slide" id="slide-2"><span class="temp">Group.pRov</span></div</a>
+  <div id="project-wrap">
+    <h1 id="projects">Projects</h1>
+    <div class="slider-wrap">
+      <div class="slider" id="slider">
+        <div class="holder">
+          <a target="_blank" href="http://nyfi.herokuapp.com/"><div class="slide" id="slide-0"><span class="temp">NYfi</span></div></a>
+          <a target="_blank" href="http://emochat.herokuapp.com/"><div class="slide" id="slide-1"><span class="temp">Emochat</span></div></a>
+          <a target="_blank" href="http://groupprov.herokuapp.com/"><div class="slide" id="slide-2"><span class="temp">Group.pRov</span></div</a>
+        </div>
       </div>
+    </div>
+  </div>
+
+  <!-- contacts -->
+  <div id="contact-wrap">
+    <h1 id="contact">Contact & Sites</h1>
+    <div class="sites-bar">
+      <a target="_blank" href="https://www.linkedin.com/in/pauljwlee"><img src="images/linkedin.png" alt="" class="sites"></a>
+      <a target="_blank" href="https://www.facebook.com/pjwlee"><img src="images/facebook.svg" alt="" class="sites"></a>
+      <a target="_blank" href="https://twitter.com/pjwl33"><img src="images/twitter.png" alt="" class="sites"></a>
+    </div>
+    <div class="sites-bar">
+      <a target="_blank" href="https://github.com/pjwl33"><img src="images/Github.png" alt="" class="sites"></a>
+      <a target="_blank" href="https://angel.co/pjwl33"><img src="images/angellist.png" alt="" class="sites"></a>
+      <a target="_blank" href="http://www.meetup.com/nycRAK/"><img src="images/meetup.png" alt="" class="sites"></a>
     </div>
   </div>
 
