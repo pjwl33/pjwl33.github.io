@@ -20,7 +20,7 @@ a {text-decoration: none; color: #ffffff;}
 .profile-pic {
   max-width: 250px;
   max-height: 250px;
-  border-radius: 50%;
+  border-radius: 5%;
   border: 4px solid #333;
   clear: both;
 }
