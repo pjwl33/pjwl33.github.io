@@ -6,6 +6,7 @@ body {
   z-index: -1;
 }
 a {text-decoration: none; color: #fffff0;}
+i {color: #333; width: 25px;}
 li {
   display: inline;
   line-height: 50px;
@@ -116,10 +117,9 @@ li {
 }
 
 /*contact & sites*/
-#contact {
+#email {color: #333;}
+#contact-wrap {
   text-align: center;
-  margin-top: 155px;
-  margin-bottom: -155px;
   color: #333;
 }
 .sites-bar {
