@@ -46,15 +46,15 @@ li {
   float: right;
 }
 
-/* photo and sites */
+/* about me */
+#about {
+  text-align: center;
+  margin-top: 155px;
+  margin-bottom: -135px;
+}
 .photo {
   text-align: center;
   margin-top: 200px;
-}
-#about {
-  margin-top: 155px;
-  margin-bottom: -175px;
-  text-align: center;
 }
 .profile-pic {
   max-width: 250px;
@@ -118,9 +118,14 @@ li {
 
 /*contact & sites*/
 #email {color: #333;}
-#contact-wrap {
+#contacts {
   text-align: center;
-  color: #333;
+  margin-top: 155px;
+  margin-bottom: -135px;
+}
+#contact-wrap {
+  margin-top: 200px;
+  text-align: center;
 }
 .sites-bar {
   text-align: center;
