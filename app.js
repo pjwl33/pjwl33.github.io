@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('#project-wrap').hide();
   $('#contact-wrap').hide();
   $('a').attr('target', '_blank');
-  setInterval(picChanger, 8000);
+  setInterval(picChanger, 9000);
 });
 
 function showDiv(div) {
@@ -42,9 +42,8 @@ function picChanger() {
   var aboutPic = $('#about-pic');
   var imgArray = ['pic_changer/pic1.png', 'pic_changer/pic2.png', 'pic_changer/pic3.png', 'pic_changer/pic4.png', 'pic_changer/pic5.png', 'pic_changer/pic6.png'];
   var random = imgArray[Math.floor(Math.random() * imgArray.length)];
-  aboutPic.fadeOut(800, function(){
-      $(this).attr('src', random).bind('onreadystatechange load', function(){
-         if (this.complete) $(this).fadeIn(800);
-      });
+  aboutPic.fadeOut(900, function(){
+      $(this).attr('src', random);
+      $(this).fadeIn(900);
    });
 }
