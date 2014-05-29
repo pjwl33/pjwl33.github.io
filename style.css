@@ -6,9 +6,9 @@ body {
   z-index: -1;
 }
 a {text-decoration: none; color: #fffff0;}
-a:hover {color: #39aecf; transition: .8s all;}
-li:hover {color: #39aecf; transition: .8s all;}
-h1:hover {color: #39aecf; transition: .8s all;}
+a:hover {color: #39aecf; cursor: hand; transition: .8s all;}
+li:hover {color: #39aecf; cursor: hand; transition: .8s all;}
+h1:hover {color: #39aecf; cursor: hand; transition: .8s all;}
 h3 {margin-top: -15px;}
 i {color: #333; width: 25px;}
 li {
@@ -28,7 +28,8 @@ li {
   font-size: 26px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #fffff0;
+  color: #39aecf;
+  cursor: auto;
 }
 .fixed-header {
   width: 100%;
