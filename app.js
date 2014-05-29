@@ -26,7 +26,7 @@ function showDiv(div) {
     pic.show(175);
   }
   if (div == 'about-wrap') {
-    setInterval(picChanger, 10000);
+    setInterval(picChanger, 8000);
     pic.toggle(175);
     pWrap.hide();
     cWrap.hide();
@@ -67,9 +67,9 @@ function picChanger() {
   var aboutPic = $('#about-pic');
   var imgArray = ['pic_changer/pic1.jpg', 'pic_changer/pic2.jpg', 'pic_changer/pic3.jpg', 'pic_changer/pic4.jpg', 'pic_changer/pic5.jpg', 'pic_changer/pic6.jpg'];
   var random = imgArray[Math.floor(Math.random() * imgArray.length)];
-  aboutPic.fadeOut(1200, function(){
+  aboutPic.fadeOut(800, function(){
       $(this).attr('src', random).bind('onreadystatechange load', function(){
-         if (this.complete) $(this).fadeIn(1200);
+         if (this.complete) $(this).fadeIn(800);
       });
    });
 }
