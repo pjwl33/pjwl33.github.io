@@ -13,13 +13,13 @@ body, html {overflow-x: hidden; overflow-y: auto;}
   background-color: rgba(0, 0, 0, 0)
 }
 
-a:hover {color: #FF6666; cursor: hand; transition: .6s all;}
+a:hover {color: #FF6666; cursor: hand; transition: .5s all;}
 a {text-decoration: none; color: #333;}
-h1:hover {color: #FF6666; cursor: hand; transition: .6s all;}
-i:hover {color: #FF6666; cursor: hand; transition: .6s all;}
+h1:hover {color: #FF6666; cursor: hand; transition: .5s all;}
+i:hover {color: #FF6666; cursor: hand; transition: .5s all;}
 i {color: #333; padding: 5px;}
 
-li:hover {color: #FF6666; cursor: hand; transition: .6s all;}
+li:hover {color: #FF6666; cursor: hand; transition: .5s all;}
 li {
   display: inline;
   font-size: 26px;
@@ -56,7 +56,7 @@ li {
 #header-name:hover {
   color: #FF6666;
   cursor: hand;
-  transition: .6s all;
+  transition: .5s all;
 }
 .fixed-header {
   width: 100%;
@@ -84,7 +84,7 @@ li {
 #resume-icon {
   color: #fffff0;
 }
-#resume-icon:hover {color: #FF6666; cursor: hand; transition: .6s all;}
+#resume-icon:hover {color: #FF6666; cursor: hand; transition: .5s all;}
 
 /* about me */
 #about {
@@ -155,7 +155,7 @@ li {
 .project-pic:hover {
   box-shadow: 0px 0px 30px #FF6666;
   cursor: hand;
-  transition: .6s;
+  transition: .5s;
 }
 .project-info {
   max-width: 200px;
@@ -166,7 +166,7 @@ li {
 
 /*contact & sites*/
 #email {color: #333;}
-#email:hover {color: #FF6666; transition: .6s all;}
+#email:hover {color: #FF6666; transition: .5s all;}
 #email-icon {font-size: 30px; margin-top: -45px;}
 #phone-icon {font-size: 30px;}
 #phone-icon:hover {color: #333; cursor: auto;}
