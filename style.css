@@ -1,7 +1,7 @@
 body {
   background-image: url('images/background.png');
   background-attachment: fixed;
-  font-family: 'Ek Mukta', sans-serif;
+  font-family: 'Special Elite', cursive;
   color: #333;
   z-index: -1;
 }
@@ -14,9 +14,9 @@ body, html {overflow-x: hidden; overflow-y: auto;}
 }
 
 a {text-decoration: none; color: #fffff0;}
-a:hover {color: #39aecf; cursor: hand; transition: .8s all;}
-li:hover {color: #39aecf; cursor: hand; transition: .8s all;}
-h1:hover {color: #39aecf; cursor: hand; transition: .8s all;}
+a:hover {color: #FF3D0D; cursor: hand; transition: .6s all;}
+li:hover {color: #FF3D0D; cursor: hand; transition: .6s all;}
+h1:hover {color: #FF3D0D; cursor: hand; transition: .6s all;}
 h3 {margin-top: -15px;}
 i {color: #333; width: 25px;}
 li {
@@ -36,7 +36,7 @@ li {
   font-size: 26px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #39aecf;
+  color: #fffff0;
   cursor: auto;
 }
 .fixed-header {
@@ -68,6 +68,7 @@ li {
   text-align: center;
   margin-top: 155px;
   margin-bottom: -135px;
+  padding-bottom: 50px;
   font-size: 55px;
 }
 #about-wrap {
@@ -94,7 +95,7 @@ li {
   letter-spacing: 0.5px;
 }
 .info-link {
-  color: #39aecf;
+  color: #FF3D0D;
 }
 
 /*slider*/
@@ -103,6 +104,7 @@ li {
   margin-top: 155px;
   margin-bottom: -135px;
   font-size: 55px;
+  padding-bottom: 50px;
 }
 .slider-wrap {
   width: 920px;
@@ -167,7 +169,7 @@ li {
 
 /*contact & sites*/
 #email {color: #333;}
-#email:hover {color: #39aecf; transition: .8s all;}
+#email:hover {color: #FF3D0D; transition: .6s all;}
 #contacts {
   text-align: center;
   margin-top: 155px;
