@@ -65,7 +65,7 @@ function showDiv(div) {
 
 function picChanger() {
   var aboutPic = $('#about-pic');
-  var imgArray = ['images/personal.png', 'images/groupprov.png', 'images/emochat.png', 'images/nyfi.png'];
+  var imgArray = ['pic_changer/pic1.jpg', 'pic_changer/pic2.jpg', 'pic_changer/pic3.jpg', 'pic_changer/pic4.jpg', 'pic_changer/pic5.jpg', 'pic_changer/pic6.jpg'];
   var random = imgArray[Math.floor(Math.random() * imgArray.length)];
   aboutPic.fadeOut(1200, function(){
       $(this).attr('src', random).bind('onreadystatechange load', function(){
