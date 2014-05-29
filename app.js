@@ -2,9 +2,6 @@ $(document).ready(function() {
   $('#about-wrap').hide();
   $('#project-wrap').hide();
   $('#contact-wrap').hide();
-  // $('#proj1').hide();
-  // $('#proj2').hide();
-  // $('#proj3').hide();
   $('a').attr('target', '_blank');
 });
 
