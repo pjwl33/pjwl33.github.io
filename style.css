@@ -160,6 +160,7 @@ li {
 .project-info {
   max-width: 200px;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 /*contact & sites*/

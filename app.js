@@ -26,6 +26,7 @@ function showDiv(div) {
     pic.show(175);
   }
   if (div == 'about-wrap') {
+    setInterval(picChanger, 10000);
     pic.toggle(175);
     pWrap.hide();
     cWrap.hide();
@@ -60,4 +61,15 @@ function showDiv(div) {
     p3Info.toggle(150);
   }
   $('html, body').animate({scrollTop: $(document).height()}, 'slow');
+}
+
+function picChanger() {
+  var aboutPic = $('#about-pic');
+  var imgArray = ['images/personal.png', 'images/groupprov.png', 'images/emochat.png', 'images/nyfi.png'];
+  var random = imgArray[Math.floor(Math.random() * imgArray.length)];
+  aboutPic.fadeOut(1200, function(){
+      $(this).attr('src', random).bind('onreadystatechange load', function(){
+         if (this.complete) $(this).fadeIn(1200);
+      });
+   });
 }
