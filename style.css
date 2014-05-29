@@ -16,6 +16,8 @@ body, html {overflow-x: hidden; overflow-y: auto;}
 a {text-decoration: none; color: #333;}
 a:hover {color: #78D5E3; cursor: hand; transition: .6s all;}
 h1:hover {color: #78D5E3; cursor: hand; transition: .6s all;}
+li {color: #fffff0;}
+li:hover {color: #78D5E3; cursor: hand; transition: .6s all;}
 h3 {margin-top: -15px;}
 i {color: #333; width: 25px;}
 i:hover {color: #78D5E3; cursor: hand; transition: .6s all;}
@@ -81,15 +83,11 @@ li {
   margin: 0;
   float: right;
 }
-#resume {
-  color: #fffff0;
-}
-#resume:hover {color: #78D5E3; cursor: hand; transition: .6s all;}
 #resume-icon {
   color: #fffff0;
+  margin-right: 2px;
 }
 #resume-icon:hover {color: #78D5E3; cursor: hand; transition: .6s all;}
-
 
 /* about me */
 #about {
