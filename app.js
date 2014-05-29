@@ -26,7 +26,7 @@ function showDiv(div) {
     pic.show(175);
   }
   if (div == 'about-wrap') {
-    setInterval(picChanger, 8000);
+    // setInterval(picChanger, 8000);
     pic.toggle(175);
     pWrap.hide();
     cWrap.hide();
