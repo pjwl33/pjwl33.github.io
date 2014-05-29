@@ -148,7 +148,9 @@ li {
   cursor: hand;
   transition: .6s;
 }
-
+.project-info {
+  max-width: 270px;
+}
 
 /*contact & sites*/
 #email {color: #333;}
