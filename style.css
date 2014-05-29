@@ -13,13 +13,13 @@ body, html {overflow-x: hidden; overflow-y: auto;}
   background-color: rgba(0, 0, 0, 0)
 }
 
-a:hover {color: #78D5E3; cursor: hand; transition: .6s all;}
+a:hover {color: #FF6666; cursor: hand; transition: .6s all;}
 a {text-decoration: none; color: #333;}
-h1:hover {color: #78D5E3; cursor: hand; transition: .6s all;}
-i:hover {color: #78D5E3; cursor: hand; transition: .6s all;}
+h1:hover {color: #FF6666; cursor: hand; transition: .6s all;}
+i:hover {color: #FF6666; cursor: hand; transition: .6s all;}
 i {color: #333; padding: 5px;}
 
-li:hover {color: #78D5E3; cursor: hand; transition: .6s all;}
+li:hover {color: #FF6666; cursor: hand; transition: .6s all;}
 li {
   display: inline;
   font-size: 26px;
@@ -54,7 +54,7 @@ li {
   cursor: auto;
 }
 #header-name:hover {
-  color: #78D5E3;
+  color: #FF6666;
   cursor: hand;
   transition: .6s all;
 }
@@ -84,7 +84,7 @@ li {
 #resume-icon {
   color: #fffff0;
 }
-#resume-icon:hover {color: #78D5E3; cursor: hand; transition: .6s all;}
+#resume-icon:hover {color: #FF6666; cursor: hand; transition: .6s all;}
 
 /* about me */
 #about {
@@ -121,7 +121,7 @@ li {
   line-height: 25px;
 }
 .info-link {
-  color: #78D5E3;
+  color: #FF6666;
 }
 
 /*slider*/
@@ -153,7 +153,7 @@ li {
   background: #ffffff;
 }
 .project-pic:hover {
-  border: 5px solid #78D5E3;
+  border: 5px solid #FF6666;
   cursor: hand;
   transition: .6s;
 }
@@ -164,7 +164,7 @@ li {
 
 /*contact & sites*/
 #email {color: #333;}
-#email:hover {color: #78D5E3; transition: .6s all;}
+#email:hover {color: #FF6666; transition: .6s all;}
 #email-icon {font-size: 30px; margin-top: -45px;}
 #email-icon:hover {color: #333; cursor: auto;}
 #phone-icon {font-size: 30px;}
