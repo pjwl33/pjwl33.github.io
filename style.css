@@ -90,6 +90,7 @@ li {
 }
 #about-wrap {
   margin-top: -210px;
+  margin-bottom: -75px;
 }
 .photo {
   margin-left: 350px;
@@ -128,6 +129,7 @@ li {
 #project-wrap {
   margin-top: 125px;
   text-align: center;
+  margin-bottom: -50px;
 }
 .project {
   display: inline-block;
@@ -135,6 +137,7 @@ li {
   max-width: 300px;
   max-height: 600px;
   padding: 25px;
+  vertical-align: top;
 }
 .project-pic {
   max-width: 200px;
@@ -149,7 +152,8 @@ li {
   transition: .6s;
 }
 .project-info {
-  max-width: 270px;
+  max-width: 200px;
+  text-align: center;
 }
 
 /*contact & sites*/
