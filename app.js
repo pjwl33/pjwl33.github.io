@@ -22,10 +22,14 @@ function showDiv(div) {
     pWrap.hide();
     cWrap.hide();
   }
+  if (div != 'about-wrap') {
+    pic.show(175);
+  }
   if (div == 'about-wrap') {
+    pic.toggle(175);
     pWrap.hide();
     cWrap.hide();
-    $('#' + div).toggle(250);
+    $('#' + div).toggle(175);
   }
   if (div == 'project-wrap') {
     p1Info.hide();
@@ -33,12 +37,12 @@ function showDiv(div) {
     p3Info.hide();
     aWrap.hide();
     cWrap.hide();
-    $('#' + div).toggle(250);
+    $('#' + div).toggle(175);
   }
   if (div == 'contact-wrap') {
     pWrap.hide();
     aWrap.hide();
-    $('#' + div).toggle(250);
+    $('#' + div).toggle(175);
   }
   if (div == 'proj1') {
     p2Info.hide();
