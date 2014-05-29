@@ -21,9 +21,11 @@ h3 {margin-top: -15px;}
 i {color: #333; width: 25px;}
 li {
   display: inline;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   line-height: 50px;
   margin-left: 10px;
-  font-size: 18px;
   color: #fffff0;
   letter-spacing: 1.5px;
 }
