@@ -10,7 +10,6 @@ function showDiv(div) {
   var pWrap = $('#project-wrap');
   var cWrap = $('#contact-wrap');
   var pic = $('.pic-wrap');
-
   if (div == 'top') {
     aWrap.hide();
     pWrap.hide();
