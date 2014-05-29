@@ -167,7 +167,6 @@ li {
 #email {color: #333;}
 #email:hover {color: #FF6666; transition: .6s all;}
 #email-icon {font-size: 30px; margin-top: -45px;}
-#email-icon:hover {color: #333; cursor: auto;}
 #phone-icon {font-size: 30px;}
 #phone-icon:hover {color: #333; cursor: auto;}
 #contacts {
