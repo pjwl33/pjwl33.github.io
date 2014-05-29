@@ -13,13 +13,17 @@
         <h1 id="header-name">Paul Jinwoo Lee</h1>
       </div>
       <ul class="nav">
-        <li><a href="https://drive.google.com/file/d/0B7tpjy9otAJoNjRneDJYMFVXQkE/edit?usp=sharing">My Resume</a></li>
+        <li><a id="resume" href="https://drive.google.com/file/d/0B7tpjy9otAJoNjRneDJYMFVXQkE/edit?usp=sharing">My Resume</a></li>
       </ul>
     </div>
   </div>
 
+  <div class="pic-wrap">
+    <img src="images/personal.png" class="load-pic">
+  </div>
+
   <!-- personal sites -->
-  <h1 id="about" onclick="showDiv('about-wrap')">About Me</h1>
+  <h1 id="about" onclick="showDiv('about-wrap')">About Lee</h1>
   <div id="about-wrap">
     <div class="photo">
       <img src="images/personal.png" class="profile-pic">
@@ -30,7 +34,7 @@
         <br>
         In May 2014, I graduated from General Assembly's <a class="info-link" href="https://generalassemb.ly/education/web-development-immersive">Web Development Immersive</a>, where I learned full-stack development. <br>
         <br>
-         For 2 years, I was on the recruiting, biz dev, and project management side of the tech industry, before I dove into the world of code. <br>
+        For 2 years, I was on the recruiting, biz dev, and project management side of the tech industry, before I dove into the world of code. <br>
         <br>
         I am constantly looking to connect with passionate and intelligent developers to continue my growth as a technologist, tinkerer, and creative thinker.
 
@@ -41,25 +45,28 @@
   <!-- projects slider -->
   <h1 id="projects" onclick="showDiv('project-wrap')">Projects</h1>
   <div id="project-wrap">
-    <div class="slider-wrap">
-      <div class="slider" id="slider">
-        <div class="holder">
-          <div class="slide" id="slide-0">
-            <a href="http://nyfi.herokuapp.com/"><h1 class="temp">NYfi</h1></a>
-            <p class="temp2">search app for NYC's Wifi hotspots</p>
-            <p class="temp3"><a href="https://github.com/pjwl33/NYfi">view code</a></p>
-          </div>
-          <div class="slide" id="slide-1">
-            <a href="http://emochat.herokuapp.com/"><h1 class="temp">Emochat</h1></a>
-            <p class="temp2">chat app with changing Avatar icons according to user hashtag</p>
-            <p class="temp3"><a href="https://github.com/originalblend337/chat_app">view code</a></p>
-          </div>
-          <div class="slide" id="slide-2">
-            <a href="http://groupprov.herokuapp.com/"><h1 class="temp">Group.pRov</h1></a>
-            <p class="temp2">music playing app where users can record, play, loop tracks with others</p>
-            <p class="temp3"><a href="https://github.com/pjwl33/Group.pRov">view code</a></p>
-          </div>
-        </div>
+    <div class="project">
+      <img src="images/nyfi.png" class="project-pic" onclick="showDiv('proj1')" id="proj1-pic">
+      <div id="proj1">
+        <a href="http://nyfi.herokuapp.com/"><h1 class="project-title">NYfi</h1></a>
+        <p class="project-info">search app for NYC's Wifi hotspots</p>
+        <p class="project-code"><a href="https://github.com/pjwl33/NYfi">view code</a></p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="images/emochat.png" class="project-pic" onclick="showDiv('proj2')" id="proj2-pic">
+      <div id="proj2">
+        <a href="http://emochat.herokuapp.com/"><h1 class="project-title">Emochat</h1></a>
+        <p class="project-info">chat app with changing Avatar icons according to user hashtag</p>
+        <p class="project-code"><a href="https://github.com/originalblend337/chat_app">view code</a></p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="images/groupprov.png" class="project-pic" onclick="showDiv('proj3')" id="proj3-pic">
+      <div id="proj3">
+        <a href="http://groupprov.herokuapp.com/"><h1 class="project-title">Group.pRov</h1></a>
+        <p class="project-info">music playing app where users can record, play, loop tracks with others</p>
+        <p class="project-code"><a href="https://github.com/pjwl33/Group.pRov">view code</a></p>
       </div>
     </div>
   </div>
@@ -82,7 +89,5 @@
       <a href="http://www.meetup.com/nycRAK/"><img src="images/meetup.png" class="sites"></a>
     </div>
   </div>
-
-
 </body>
 </html>

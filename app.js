@@ -2,51 +2,53 @@ $(document).ready(function() {
   $('#about-wrap').hide();
   $('#project-wrap').hide();
   $('#contact-wrap').hide();
+  $('#proj1').hide();
+  $('#proj2').hide();
+  $('#proj3').hide();
   $('a').attr('target', '_blank');
-
-  var slider = {
-    el: {
-      slider: $("#slider"),
-      allSlides: $(".slide"),
-      sliderNav: $(".slider-nav"),
-      allNavButtons: $(".slider-nav > a")
-    },
-    timing: 800,
-    slideWidth: 300,
-    init: function() {
-      this.bindUIEvents();
-    },
-    bindUIEvents: function() {
-      this.el.slider.on("scroll", function(event) {
-        slider.moveSlidePosition(event);
-      });
-      this.el.sliderNav.on("click", "a", function(event) {
-        slider.handleNavClick(event, this);
-      });
-    },
-    moveSlidePosition: function(event) {
-      this.el.allSlides.css({
-        "background-position": $(event.target).scrollLeft()/6-100+ "px 0"
-      });
-    },
-  };
-  slider.init();
 });
 
 function showDiv(div) {
+  var aWrap = $('#about-wrap');
+  var pWrap = $('#project-wrap');
+  var cWrap = $('#contact-wrap');
+  var p1Info = $('#proj1');
+  var p2Info = $('#proj2');
+  var p3Info = $('#proj3');
+  var pic = $('.pic-wrap');
+
   if (div == 'about-wrap') {
-    $('#project-wrap').hide();
-    $('#contact-wrap').hide();
+    pWrap.hide();
+    cWrap.hide();
     $('#' + div).toggle(250);
   }
   if (div == 'project-wrap') {
-    $('#about-wrap').hide();
-    $('#contact-wrap').hide();
+    p1Info.hide();
+    p2Info.hide();
+    p3Info.hide();
+    aWrap.hide();
+    cWrap.hide();
     $('#' + div).toggle(250);
   }
   if (div == 'contact-wrap') {
-    $('#project-wrap').hide();
-    $('#about-wrap').hide();
+    pWrap.hide();
+    aWrap.hide();
     $('#' + div).toggle(250);
   }
+  if (div == 'proj1') {
+    p2Info.hide();
+    p3Info.hide();
+    p1Info.toggle(150);
+  }
+  if (div == 'proj2') {
+    p1Info.hide();
+    p3Info.hide();
+    p2Info.toggle(150);
+  }
+  if (div == 'proj3') {
+    p2Info.hide();
+    p1Info.hide();
+    p3Info.toggle(150);
+  }
+  $('html, body').animate({scrollTop: $(document).height()}, 'slow');
 }
