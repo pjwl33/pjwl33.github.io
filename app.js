@@ -34,5 +34,19 @@ $(document).ready(function() {
 });
 
 function showDiv(div) {
-  $('#' + div).toggle(450);
+  if (div == 'about-wrap') {
+    $('#project-wrap').hide();
+    $('#contact-wrap').hide();
+    $('#' + div).toggle(250);
+  }
+  if (div == 'project-wrap') {
+    $('#about-wrap').hide();
+    $('#contact-wrap').hide();
+    $('#' + div).toggle(250);
+  }
+  if (div == 'contact-wrap') {
+    $('#project-wrap').hide();
+    $('#about-wrap').hide();
+    $('#' + div).toggle(250);
+  }
 }

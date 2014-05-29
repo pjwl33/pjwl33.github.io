@@ -5,6 +5,14 @@ body {
   color: #333;
   z-index: -1;
 }
+body, html {overflow-x: hidden; overflow-y: auto;}
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0)
+}
+
 a {text-decoration: none; color: #fffff0;}
 a:hover {color: #39aecf; cursor: hand; transition: .8s all;}
 li:hover {color: #39aecf; cursor: hand; transition: .8s all;}
