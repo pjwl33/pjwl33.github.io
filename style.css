@@ -78,7 +78,8 @@ li {
   background-position: left center;
 }
 .nav {margin: 0; float: right;}
-#resume-icon {color: #fffff0;}
+#resume-icon {color: #fffff0; margin-right: 5px;}
+#resume {color: #fffff0;}
 #resume-icon:hover {color: #FF6666; cursor: hand; transition: .5s all;}
 
 /* about me */
