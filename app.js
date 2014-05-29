@@ -17,6 +17,11 @@ function showDiv(div) {
   var p3Info = $('#proj3');
   var pic = $('.pic-wrap');
 
+  if (div == 'top') {
+    aWrap.hide();
+    pWrap.hide();
+    cWrap.hide();
+  }
   if (div == 'about-wrap') {
     pWrap.hide();
     cWrap.hide();
