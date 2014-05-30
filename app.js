@@ -17,23 +17,23 @@ function showDiv(div) {
     cWrap.hide();
   }
   if (div != 'about-wrap') {
-    pic.show(175);
+    pic.slideDown(50);
   }
   if (div == 'about-wrap') {
-    pic.toggle(175);
+    pic.slideToggle(200);
     pWrap.hide();
     cWrap.hide();
-    $('#' + div).toggle(175);
+    $('#' + div).slideToggle(200);
   }
   if (div == 'project-wrap') {
     aWrap.hide();
     cWrap.hide();
-    $('#' + div).toggle(175);
+    $('#' + div).slideToggle(200);
   }
   if (div == 'contact-wrap') {
     pWrap.hide();
     aWrap.hide();
-    $('#' + div).toggle(175);
+    $('#' + div).slideToggle(200);
   }
   $('html, body').animate({scrollTop: $(document).height()}, 'slow');
 }
