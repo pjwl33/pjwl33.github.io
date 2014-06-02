@@ -93,10 +93,12 @@ li {
 #about-wrap {
   margin-top: -210px;
   margin-bottom: -75px;
+  width: 1200px;
 }
 .photo {
   margin-left: 350px;
   margin-top: 200px;
+  float: left;
 }
 .profile-pic {
   max-width: 250px;
