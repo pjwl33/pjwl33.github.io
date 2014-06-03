@@ -42,8 +42,8 @@ function picChanger() {
   var aboutPic = $('#about-pic');
   var imgArray = ['pic_changer/pic1.png', 'pic_changer/pic2.png', 'pic_changer/pic3.png', 'pic_changer/pic4.png', 'pic_changer/pic5.png'];
   var random = imgArray[Math.floor(Math.random() * imgArray.length)];
-  aboutPic.fadeOut(900, function(){
+  aboutPic.fadeOut(700, function(){
       $(this).attr('src', random);
-      $(this).fadeIn(900);
+      $(this).fadeIn(700);
    });
 }
