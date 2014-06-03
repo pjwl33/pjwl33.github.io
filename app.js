@@ -33,7 +33,7 @@ function showDiv(div) {
   if (div == 'contact-wrap') {
     pWrap.hide();
     aWrap.hide();
-    $('#' + div).slideToggle(200);
+    $('#' + div).toggle(200);
   }
   $('html, body').animate({scrollTop: $(document).height()}, 'slow');
 }
