@@ -38,7 +38,7 @@ function showDiv(div) {
   $('html, body').animate({scrollTop: $(document).height()}, 'slow');
 }
 
-var imgArray = ['pic_changer/pic1.png', 'pic_changer/pic2.png', 'pic_changer/pic3.png', 'pic_changer/pic4.png', 'pic_changer/pic5.png'];
+var imgArray = ['pic_changer/pic2.png', 'pic_changer/pic3.png', 'pic_changer/pic4.png', 'pic_changer/pic5.png', 'pic_changer/pic1.png'];
 
 function picChanger() {
   var aboutPic = $('#about-pic');
