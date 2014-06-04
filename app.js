@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('#project-wrap').hide();
   $('#contact-wrap').hide();
   $('a').attr('target', '_blank');
-  setInterval(picChanger, 9000);
+  setInterval(picChanger, 8000);
 });
 
 function showDiv(div) {
@@ -38,12 +38,14 @@ function showDiv(div) {
   $('html, body').animate({scrollTop: $(document).height()}, 'slow');
 }
 
+var imgArray = ['pic_changer/pic1.png', 'pic_changer/pic2.png', 'pic_changer/pic3.png', 'pic_changer/pic4.png', 'pic_changer/pic5.png'];
+
 function picChanger() {
   var aboutPic = $('#about-pic');
-  var imgArray = ['pic_changer/pic1.png', 'pic_changer/pic2.png', 'pic_changer/pic3.png', 'pic_changer/pic4.png', 'pic_changer/pic5.png'];
-  var random = imgArray[Math.floor(Math.random() * imgArray.length)];
+  var img = imgArray.shift();
+  imgArray.push(img);
   aboutPic.fadeOut(700, function(){
-      $(this).attr('src', random);
+      $(this).attr('src', img);
       $(this).fadeIn(700);
    });
 }
