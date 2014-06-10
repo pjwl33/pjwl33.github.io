@@ -10,17 +10,12 @@ function showDiv(div) {
   var aWrap = $('#about-wrap');
   var pWrap = $('#project-wrap');
   var cWrap = $('#contact-wrap');
-  var pic = $('.pic-wrap');
   if (div == 'top') {
     aWrap.hide();
     pWrap.hide();
     cWrap.hide();
   }
-  if (div != 'about-wrap') {
-    pic.slideDown(50);
-  }
   if (div == 'about-wrap') {
-    pic.slideToggle(200);
     pWrap.hide();
     cWrap.hide();
     $('#' + div).slideToggle(200);
