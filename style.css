@@ -1,7 +1,7 @@
 body {
   background-image: url('images/background.png');
   background-attachment: fixed;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Open Sans', sans-serif;
   color: #333;
   z-index: -1;
 }
@@ -22,13 +22,13 @@ footer {
 }
 #name {text-transform: uppercase; font-size: 20px;}
 
-a:hover {color: #FF6666; cursor: hand; transition: .5s all;}
+a:hover {color: #01B6AD; cursor: hand; transition: .5s all;}
 a {text-decoration: none; color: #333;}
-h1:hover {color: #FF6666; cursor: hand; transition: .5s all;}
-i:hover {color: #FF6666; cursor: hand; transition: .5s all;}
+h1:hover {color: #01B6AD; cursor: hand; transition: .5s all;}
+i:hover {color: #01B6AD; cursor: hand; transition: .5s all;}
 i {color: #333; padding: 5px;}
 
-li:hover {color: #FF6666; cursor: hand; transition: .5s all;}
+li:hover {color: #01B6AD; cursor: hand; transition: .5s all;}
 li {
   display: inline;
   font-size: 26px;
@@ -58,7 +58,7 @@ li {
   cursor: auto;
 }
 #header-name:hover {
-  color: #FF6666;
+  color: #01B6AD;
   cursor: hand;
   transition: .5s all;
 }
@@ -84,7 +84,7 @@ li {
 .nav {margin: 0; float: right;}
 #resume-icon {color: #fffff0; margin-right: 5px;}
 #resume {color: #fffff0;}
-#resume-icon:hover {color: #FF6666; cursor: hand; transition: .5s all;}
+#resume-icon:hover {color: #01B6AD; cursor: hand; transition: .5s all;}
 
 /* about me */
 #about {
@@ -123,7 +123,7 @@ li {
   line-height: 25px;
 }
 .info-link {
-  color: #FF6666;
+  color: #01B6AD;
 }
 
 /*slider*/
@@ -159,7 +159,7 @@ li {
   margin-bottom: 15px;
 }
 .project-pic:hover {
-  box-shadow: 0px 0px 35px #FF6666;
+  box-shadow: 0px 0px 35px #01B6AD;
   cursor: hand;
   transition: .5s;
 }
@@ -172,7 +172,7 @@ li {
 
 /*contact & sites*/
 #email {color: #333;}
-#email:hover {color: #FF6666; transition: .5s all;}
+#email:hover {color: #01B6AD; transition: .5s all;}
 #email-icon {font-size: 30px; margin-top: -45px;}
 #phone-icon {font-size: 30px;}
 #phone-icon:hover {color: #333; cursor: auto;}
