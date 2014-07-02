@@ -125,7 +125,7 @@ footer {
 
 @media only screen and (max-device-width: 480px) {
   h1 {font-size: 45px;}
-  body {font-family: Serif}
+  body {font-family: sans-serif;}
   .header-content {
     margin: auto 2em;
   }
