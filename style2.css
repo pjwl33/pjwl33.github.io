@@ -1,0 +1,168 @@
+body, html {overflow-x: hidden; overflow-y: auto;}
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0)
+}
+body {
+  background-image: url('images/background.png');
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #333;
+  z-index: -1;
+}
+h1 {margin: 0.3em auto;}
+a:hover {color: #01B6AD; cursor: hand; transition: .5s all;}
+a {text-decoration: none; color: #333;}
+h1:hover {color: #01B6AD; cursor: hand; transition: .5s all;}
+i:hover {color: #01B6AD; cursor: hand; transition: .5s all;}
+i {color: #333; padding: 5px;}
+
+.fixed-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #333;
+  z-index: 2;
+}
+.header-content {
+  width: 85%;
+  margin: auto 5em;
+}
+#header-name {
+  letter-spacing: 1.5px;
+  color: #fffff0;
+  cursor: auto;
+  float: left;
+}
+#header-resume {
+  letter-spacing: 1.5px;
+  cursor: auto;
+  float: right;
+}
+#header-name:hover, #resume:hover, #resume-icon:hover {
+  color: #01B6AD;
+  cursor: hand;
+  transition: .5s all;
+}
+#resume-icon {color: #fffff0; margin-right: 5px;}
+#resume {color: #fffff0;}
+
+#about, #projects, #contacts {
+  margin-top: 1.5em;
+  text-align: center;
+  font-size: 4.5em;
+}
+.wrapper {
+  max-width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.profile-pic {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #333;
+}
+.info-text {
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.info-link {
+  color: #01B6AD;
+  font-weight: bold;
+}
+
+.project {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: auto 3em;
+}
+.project-title {
+  margin-bottom: 30px;
+}
+.project-pic {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #333;
+  background: #ffffff;
+}
+.project-pic:hover {
+  box-shadow: 0px 0px 35px #01B6AD;
+  cursor: hand;
+  transition: .5s;
+}
+.project-info {
+  max-width: 200px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+/*contact & sites*/
+#email {color: #333;}
+#email:hover {color: #01B6AD; transition: .5s all;}
+#email-icon, #phone-icon {font-size: 30px;}
+#phone-icon:hover {color: #333; cursor: auto;}
+
+.sites-bar {
+  display: inline-block;
+  font-size: 50px;
+  margin-bottom: 125px;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+@media only screen and (max-device-width: 480px) {
+  h1 {font-size: 55px;}
+  .header-content {
+    margin: auto 2em;
+  }
+  #about, #projects, #contacts {
+    font-size: 135px;
+  }
+  .profile-pic {
+    max-width: 600px;
+    max-height: 600px;
+    margin-top: 10px;
+  }
+  .info-text {
+    font-size: 3em;
+    line-height: 60px;
+  }
+  .project-pic{
+    width: 600px;
+    height: 600px;
+  }
+  .project-info {
+    max-width: 100%;
+    line-height: 60px;
+  }
+  .project {
+    font-size: 50px;
+    margin: 45px auto;
+  }
+  .project-title {
+    font-size: 75px;
+  }
+  #email-icon, #phone-icon {font-size: 100px;}
+  .contact-info {font-size: 60px;}
+  .sites-bar {
+    font-size: 100px;
+  }
+  footer {
+    visibility: hidden;
+  }
+
+
+}

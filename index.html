@@ -3,91 +3,87 @@
   <link rel="icon" type="image/png" href="http://www.softwarecrew.com/wp-content/uploads/2012/07/panda_cloud_av_icon.png">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style2.css">
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="app.js"></script>
 </head>
+
 <body>
   <div class="fixed-header">
     <div class="header-content">
-      <div class="logo">
-        <h1 id="header-name" onclick="showDiv('top')">Paul Jinwoo Lee</h1>
-      </div>
-      <ul class="nav">
-        <a id="resume" href="https://s3.amazonaws.com/resume-info/PJWL_Resume_053014.pdf"><li><i class="fa fa-file-text" id="resume-icon"></i>Resume</li></a>
-      </ul>
+      <h1 id="header-name" onclick="showDiv('top')">PAUL JINWOO LEE</h1>
+      <h1 id="header-resume"><a id="resume" href="https://s3.amazonaws.com/resume-info/PJWL_Resume_053014.pdf"><i class="fa fa-file-text" id="resume-icon"></i>RESUME</a></h1>
     </div>
   </div>
 
-  <!-- personal sites -->
-  <h1 id="about" onclick="showDiv('about-wrap')">About Me</h1>
-  <div id="about-wrap">
-    <div class="photo">
+  <div class="wrapper">
+    <h1 id="about" onclick="showDiv('about-wrap')">About Me</h1>
+    <div id="about-wrap">
       <img src="images/personal.png" class="profile-pic" id="about-pic">
+      <div class="info">
+        <p class="info-text">
+          My name is Paul Jinwoo Lee: I'm a Korean-native, Michigan-raised, and Brooklyn-living web developer. I primarily use Ruby/Rails along with Javascript/jQuery to code ideas into reality.<br>
+          <br>
+          In May 2014, I graduated from <a class="info-link" href="https://generalassemb.ly/education/web-development-immersive">General Assembly's Web Development Immersive</a>, where I learned full-stack development. <br>
+          <br>
+          For 2 years, I was on the recruiting, biz dev, and project management side of the tech industry, before I dove into the world of code. <br>
+          <br>
+          I am constantly looking to connect with passionate and intelligent developers to continue my growth as a technologist, tinkerer, and creative thinker.
+        </p>
+      </div>
     </div>
-    <div class="info">
-      <p class="info-text">
-        My name is <span id="name">Paul Jinwoo Lee</span>: I'm a Korean-native, Michigan-raised, and Brooklyn-living web devloper<br>
-        <br>
-        In May 2014, I graduated from <a class="info-link" href="https://generalassemb.ly/education/web-development-immersive">General Assembly's Web Development Immersive</a>, where I learned full-stack development. <br>
-        <br>
-        For 2 years, I was on the recruiting, biz dev, and project management side of the tech industry, before I dove into the world of code. <br>
-        <br>
-        I am constantly looking to connect with passionate and intelligent developers to continue my growth as a technologist, tinkerer, and creative thinker.
-      </p>
+
+    <h1 id="projects" onclick="showDiv('project-wrap')">Projects</h1>
+    <div id="project-wrap">
+   <!--    <div class="project">
+        <div class="project-info">
+          <a href="http://nyfi.herokuapp.com/"><h1 class="project-title">NYfi</h1><img src="images/nyfi.png" class="project-pic"></a>
+          <p>Search app for NYC's wifi hotspots and their Yelp ratings</p>
+          <h3><a href="https://github.com/pjwl33/NYfi">SOURCE CODE</a></h3>
+        </div>
+      </div> -->
+      <div class="project">
+        <div class="project-info">
+          <a href="http://ratemylunch.herokuapp.com/"><h1 class="project-title">RateMyLunch</h1><img src="images/ratemylunch.png" class="project-pic"></a>
+          <p>A fun and innovative game for Employees to inspire co-workers to eat the best lunches for their health needs <br><br><a class="info-link" href="http://hackdiningnyc.foodtechconnect.com/">Hack//Dining NYC Hackathon</a> Project</p>
+          <h3><a href="https://github.com/pjwl33/lunch_it">SOURCE CODE</a></h3>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-info">
+          <a href="http://emochat.herokuapp.com/"><h1 class="project-title">Emochat</h1><img src="images/emochat.png" class="project-pic"></a>
+          <p>Chat app with changing avatar icons according to user hashtag and self-taken pictures</p>
+          <h3><a href="https://github.com/originalblend337/chat_app">SOURCE CODE</a></b3>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-info">
+          <a href="http://groupprov.herokuapp.com/"><h1 class="project-title">Group.pRov</h1><img src="images/groupprov.png" class="project-pic"></a>
+          <p>Music playing app where users can record, play, and loop tracks with others using their QWERTY keyboards</p>
+          <h3><a href="https://github.com/pjwl33/Group.pRov">SOURCE CODE</a></h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- contacts -->
+    <h1 id="contacts" onclick="showDiv('contact-wrap')">Get in Touch</h1>
+    <div id="contact-wrap">
+      <a href="mailto:paul.leejw@gmail.com"><i class="fa fa-envelope" id="email-icon"></i></a>
+      <h3 class="contact-info"><a href="mailto:paul.leejw@gmail.com" id="email">paul.leejw@gmail.com</a></h3>
+      <i class="fa fa-phone" id="phone-icon"></i>
+      <h3 class="contact-info">931.546.9660</h3>
+      <div class="sites-bar">
+        <a href="https://www.linkedin.com/in/pauljwlee"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/pjwlee"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/pjwl33"><i class="fa fa-twitter"></i></a>
+        <a href="https://github.com/pjwl33"><i class="fa fa-github"></i></a>
+        <a href="https://angel.co/pjwl33"><i class="fa fa-list"></i></a>
+        <a href="http://www.meetup.com/nycRAK/"><i class="fa fa-users"></i></a>
+      </div>
     </div>
   </div>
-
-  <!-- projects slider -->
-  <h1 id="projects" onclick="showDiv('project-wrap')">Projects</h1>
-  <div id="project-wrap">
- <!--    <div class="project">
-      <div class="project-info">
-        <a href="http://nyfi.herokuapp.com/"><h1 class="project-title">NYfi</h1><img src="images/nyfi.png" class="project-pic" id="proj1-pic"></a>
-        <p>Search app for NYC's wifi hotspots and their Yelp ratings</p>
-        <h3><a href="https://github.com/pjwl33/NYfi">SOURCE CODE</a></h3>
-      </div>
-    </div> -->
-    <div class="project">
-      <div class="project-info">
-        <a href="http://ratemylunch.herokuapp.com/"><h1 class="project-title">RateMyLunch</h1><img src="images/ratemylunch.png" class="project-pic" id="proj4-pic"></a>
-        <p>A fun and innovative game for Employees to inspire co-workers to eat the best lunches for their health needs <br><br><a class="info-link" href="http://hackdiningnyc.foodtechconnect.com/">Hack//Dining NYC Hackathon</a> Project</p>
-        <h3><a href="https://github.com/pjwl33/lunch_it">SOURCE CODE</a></h3>
-      </div>
-    </div>
-    <div class="project">
-      <div class="project-info">
-        <a href="http://emochat.herokuapp.com/"><h1 class="project-title">Emochat</h1><img src="images/emochat.png" class="project-pic" id="proj2-pic"></a>
-        <p>Chat app with changing avatar icons according to user hashtag and self-taken pictures</p>
-        <h3><a href="https://github.com/originalblend337/chat_app">SOURCE CODE</a></b3>
-      </div>
-    </div>
-    <div class="project">
-      <div class="project-info">
-        <a href="http://groupprov.herokuapp.com/"><h1 class="project-title">Group.pRov</h1><img src="images/groupprov.png" class="project-pic" id="proj3-pic"></a>
-        <p>Music playing app where users can record, play, and loop tracks with others using their QWERTY keyboards</p>
-        <h3><a href="https://github.com/pjwl33/Group.pRov">SOURCE CODE</a></h3>
-      </div>
-    </div>
-  </div>
-
-  <!-- contacts -->
-  <h1 id="contacts" onclick="showDiv('contact-wrap')">Get in Touch</h1>
-  <div id="contact-wrap">
-    <a href="mailto:paul.leejw@gmail.com"><i class="fa fa-envelope" id="email-icon"></i></a>
-    <h3 class="contact-info"><a href="mailto:paul.leejw@gmail.com" id="email">paul.leejw@gmail.com</a></h3>
-    <i class="fa fa-phone" id="phone-icon"></i>
-    <h3 class="contact-info">931.546.9660</h3>
-    <div class="sites-bar">
-      <a href="https://www.linkedin.com/in/pauljwlee"><i class="fa fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/pjwlee"><i class="fa fa-facebook"></i></a>
-      <a href="https://twitter.com/pjwl33"><i class="fa fa-twitter"></i></a>
-      <a href="https://github.com/pjwl33"><i class="fa fa-github"></i></a>
-      <a href="https://angel.co/pjwl33"><i class="fa fa-list"></i></a>
-      <a href="http://www.meetup.com/nycRAK/"><i class="fa fa-users"></i></a>
-    </div>
-  </div>
-
 </body>
-<footer>&copy Paul Jinwoo Lee 2014. All rights reserved.</footer>
+
+<footer>&copy Paul Jinwoo Lee 2014 (Panda Lover & Mind Explorer). All rights reserved.</footer>
 </html>
