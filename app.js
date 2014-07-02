@@ -19,18 +19,20 @@ function showDiv(div) {
     pWrap.hide();
     cWrap.hide();
     $('#' + div).slideToggle(200);
+    $('body').animate({scrollTop: 0}, 'fast');
   }
   if (div == 'project-wrap') {
     aWrap.hide();
     cWrap.hide();
     $('#' + div).slideToggle(200);
+    $('body').animate({scrollTop: 235}, 'fast');
   }
   if (div == 'contact-wrap') {
     pWrap.hide();
     aWrap.hide();
     $('#' + div).slideToggle(200);
+    $('body').animate({scrollTop: $(document).height()}, 'fast');
   }
-  $('html, body').animate({scrollTop: $(document).height()}, 'slow');
 }
 
 var imgArray = ['pic_changer/pic2.png', 'pic_changer/pic3.png', 'pic_changer/pic4.png', 'pic_changer/pic5.png', 'pic_changer/pic1.png'];
