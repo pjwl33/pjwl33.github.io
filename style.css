@@ -13,11 +13,11 @@ body {
   color: #333;
   z-index: -1;
 }
-h1 {margin: 0.3em auto;}
-a:hover {color: #01B6AD; cursor: hand; transition: .5s all;}
+h1 {margin: 0.3em auto; font-family: 'Gentium Basic', serif;}
+a:hover {color: #01B6AD; cursor: hand; transition: .4s all;}
 a {text-decoration: none; color: #333;}
-h1:hover {color: #01B6AD; cursor: hand; transition: .5s all;}
-i:hover {color: #01B6AD; cursor: hand; transition: .5s all;}
+h1:hover {color: #01B6AD; cursor: hand; transition: .4s all;}
+i:hover {color: #01B6AD; cursor: hand; transition: .4s all;}
 i {color: #333; padding: 5px;}
 
 .fixed-header {
@@ -46,7 +46,7 @@ i {color: #333; padding: 5px;}
 #header-name:hover, #resume:hover, #resume-icon:hover {
   color: #01B6AD;
   cursor: hand;
-  transition: .5s all;
+  transition: .4s all;
 }
 #resume-icon {color: #fffff0; margin-right: 5px;}
 #resume {color: #fffff0;}
@@ -97,7 +97,7 @@ i {color: #333; padding: 5px;}
 .project-pic:hover {
   box-shadow: 0px 0px 35px #01B6AD;
   cursor: hand;
-  transition: .5s;
+  transition: .4s;
 }
 .project-info {
   max-width: 200px;
@@ -108,7 +108,7 @@ i {color: #333; padding: 5px;}
 
 /*contact & sites*/
 #email {color: #333;}
-#email:hover {color: #01B6AD; transition: .5s all;}
+#email:hover {color: #01B6AD; transition: .4s all;}
 #email-icon, #phone-icon {font-size: 30px;}
 #phone-icon:hover {color: #333; cursor: auto;}
 
@@ -164,6 +164,4 @@ footer {
   footer {
     visibility: hidden;
   }
-
-
 }
