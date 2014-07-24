@@ -128,10 +128,10 @@ footer {
 @media only screen and (max-device-width: 480px) {
   h1 {
     font-size: 45px;
-    font-family: Serif;
+    font-family: 'Garamond';
   }
   body {
-    background-attachment: scroll;
+    background-size: auto;
   }
   .header-content {
     margin: auto 2em;
