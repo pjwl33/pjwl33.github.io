@@ -126,7 +126,13 @@ footer {
 }
 
 @media only screen and (max-device-width: 480px) {
-  h1 {font-size: 45px;}
+  h1 {
+    font-size: 45px;
+    font-family: Serif;
+  }
+  body {
+    background-attachment: scroll;
+  }
   .header-content {
     margin: auto 2em;
   }
