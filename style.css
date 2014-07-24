@@ -131,7 +131,7 @@ footer {
     font-family: 'Garamond';
   }
   body {
-    background-size: auto;
+    background-size: auto 100%;
   }
   .header-content {
     margin: auto 2em;
