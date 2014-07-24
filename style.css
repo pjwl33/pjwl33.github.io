@@ -6,26 +6,29 @@ body, html {overflow-x: hidden; overflow-y: auto;}
   background-color: rgba(0, 0, 0, 0)
 }
 body {
-  background-image: url('images/background.png');
+  background-image: url('images/brooklyn.jpg');
   background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  color: #333;
+  color: #ffffcc;
   z-index: -1;
+  text-shadow: 0px 0px 20px #333;;
 }
 h1 {margin: 0.3em auto; font-family: 'Gentium Basic', serif;}
 a:hover {color: #01B6AD; cursor: hand; transition: .4s all;}
-a {text-decoration: none; color: #333;}
+a {text-decoration: none; color: #ffffcc;}
 h1:hover {color: #01B6AD; cursor: hand; transition: .4s all;}
 i:hover {color: #01B6AD; cursor: hand; transition: .4s all;}
-i {color: #333; padding: 5px;}
+i {color: #ffffcc; padding: 5px;}
 
 .fixed-header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background: #333;
+  background-color: rgba(51, 51, 51, 0.7);
   z-index: 2;
 }
 .header-content {
@@ -34,7 +37,7 @@ i {color: #333; padding: 5px;}
 }
 #header-name {
   letter-spacing: 1.5px;
-  color: #fffff0;
+  color: #ffffcc;
   cursor: auto;
   float: left;
 }
@@ -48,8 +51,8 @@ i {color: #333; padding: 5px;}
   cursor: hand;
   transition: .4s all;
 }
-#resume-icon {color: #fffff0; margin-right: 5px;}
-#resume {color: #fffff0;}
+#resume-icon {color: #ffffcc; margin-right: 5px;}
+#resume {color: #ffffcc;}
 
 #about, #projects, #contacts {
   margin-top: 1.5em;
@@ -107,7 +110,6 @@ i {color: #333; padding: 5px;}
 }
 
 /*contact & sites*/
-#email {color: #333;}
 #email:hover {color: #01B6AD; transition: .4s all;}
 #email-icon, #phone-icon {font-size: 30px;}
 #phone-icon:hover {color: #333; cursor: auto;}
