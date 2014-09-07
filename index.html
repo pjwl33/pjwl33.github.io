@@ -1,7 +1,7 @@
 <html>
 <head>
   <link rel="icon" type="image/png" href="http://www.softwarecrew.com/wp-content/uploads/2012/07/panda_cloud_av_icon.png">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
@@ -9,6 +9,8 @@
   <script src="app.js"></script>
 </head>
 
+<div id="backdrop"></div>
+<div id="blue-tint"></div>
 <body>
   <div class="fixed-header">
     <div class="header-content">
@@ -36,13 +38,15 @@
 
     <h1 id="projects" onclick="showDiv('project-wrap')">Projects</h1>
     <div id="project-wrap">
-   <!--    <div class="project">
+      <!-- NYFI -->
+      <div class="project">
         <div class="project-info">
           <a href="http://nyfi.herokuapp.com/"><h1 class="project-title">NYfi</h1><img src="images/nyfi.png" class="project-pic"></a>
-          <p>Search app for NYC's wifi hotspots and their Yelp ratings</p>
+          <p>First Rails application: search app for NYC's wifi hotspots and their Yelp ratings</p>
           <h3><a href="https://github.com/pjwl33/NYfi">SOURCE CODE</a></h3>
         </div>
-      </div> -->
+      </div>
+      <!-- RATE MY LUNCH -->
       <div class="project">
         <div class="project-info">
           <a href="http://ratemylunch.herokuapp.com/"><h1 class="project-title">RateMyLunch</h1><img src="images/ratemylunch.png" class="project-pic"></a>
@@ -50,18 +54,28 @@
           <h3><a href="https://github.com/pjwl33/lunch_it">SOURCE CODE</a></h3>
         </div>
       </div>
+      <!-- EMOCHAT -->
       <div class="project">
         <div class="project-info">
           <a href="http://emochat.herokuapp.com/"><h1 class="project-title">Emochat</h1><img src="images/emochat.png" class="project-pic"></a>
           <p>Chat app with changing avatar icons according to user hashtag and self-taken photos.</p>
-          <h3><a href="https://github.com/originalblend337/chat_app">SOURCE CODE</a></b3>
+          <h3><a href="https://github.com/originalblend337/chat_app">SOURCE CODE</a></h3>
         </div>
       </div>
+      <!-- GROUP.PROV -->
       <div class="project">
         <div class="project-info">
           <a href="http://groupprov.herokuapp.com/"><h1 class="project-title">Group.pRov</h1><img src="images/groupprov.png" class="project-pic"></a>
           <p>Music playing app where users can record, play, and loop tracks with others using their QWERTY keyboards. Simulating MIDI playback functionality.</p>
           <h3><a href="https://github.com/pjwl33/Group.pRov">SOURCE CODE</a></h3>
+        </div>
+      </div>
+      <!-- HATE TO LOVE -->
+      <div class="project">
+        <div class="project-info">
+          <a href="http://hatetolove.herokuapp.com/"><h1 class="project-title">Hate To Love</h1><img src="images/hatetolove.jpg" class="project-pic"></a>
+          <p>Rails application (iOS version in the works) where users can find the loves of their lives by hating the same things</p>
+          <h3><a href="https://github.com/pjwl33/date_app">SOURCE CODE</a></h3>
         </div>
       </div>
     </div>
@@ -78,8 +92,7 @@
         <a href="https://www.facebook.com/pjwlee"><i class="fa fa-facebook"></i></a>
         <a href="https://twitter.com/pjwl33"><i class="fa fa-twitter"></i></a>
         <a href="https://github.com/pjwl33"><i class="fa fa-github"></i></a>
-        <a href="https://angel.co/pjwl33"><i class="fa fa-list"></i></a>
-        <a href="http://www.meetup.com/nycRAK/"><i class="fa fa-users"></i></a>
+        <a href="https://angel.co/pjwl33"><i class="fa fa-angellist"></i></a>
       </div>
     </div>
   </div>

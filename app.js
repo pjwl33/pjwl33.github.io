@@ -4,6 +4,7 @@ $(document).ready(function() {
   $('#contact-wrap').hide();
   $('a').attr('target', '_blank');
   setInterval(picChanger, 8000);
+  // $('#backdrop').css('height', $(window).height());
 });
 
 function showDiv(div) {
