@@ -3,7 +3,14 @@ $(document).ready(function() {
   $('#project-wrap').hide();
   $('#contact-wrap').hide();
   $('a').attr('target', '_blank');
-  setInterval(picChanger, 8000);
+
+  var first = $('#about-pic-1').attr('src');
+  var second = $('#about-pic-2').attr('src');
+  var third = $('#about-pic-3').attr('src');
+  var fourth = $('#about-pic-4').attr('src');
+  var fifth = $('#about-pic-5').attr('src');
+  var imgArray = [first, second, third, fourth, fifth];
+  picChanger(imgArray);
   // $('#backdrop').css('height', $(window).height());
 });
 
@@ -36,14 +43,13 @@ function showDiv(div) {
   }
 }
 
-var imgArray = ['pic_changer/pic2.png', 'pic_changer/pic3.png', 'pic_changer/pic4.png', 'pic_changer/pic5.png', 'pic_changer/pic1.png'];
-
-function picChanger() {
+function picChanger(imgArray) {
   var aboutPic = $('#about-pic');
   var img = imgArray.shift();
   imgArray.push(img);
   aboutPic.fadeOut(700, function(){
-      $(this).attr('src', img);
-      $(this).fadeIn(700);
-   });
+    $(this).attr('src', img);
+    $(this).fadeIn(700);
+  });
+  setInterval(function(){ picChanger(imgArray); }, 8000);
 }
