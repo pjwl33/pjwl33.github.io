@@ -11,7 +11,7 @@ $(document).ready(function() {
   var fifth = $('#about-pic-5').attr('src');
   var imgArray = [first, second, third, fourth, fifth];
   picChanger(imgArray);
-  // $('#backdrop').css('height', $(window).height());
+  setInterval(function(){ picChanger(imgArray); }, 8000);
 });
 
 function showDiv(div) {
@@ -51,5 +51,4 @@ function picChanger(imgArray) {
     $(this).attr('src', img);
     $(this).fadeIn(700);
   });
-  setInterval(function(){ picChanger(imgArray); }, 8000);
 }
