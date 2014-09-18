@@ -16,7 +16,6 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle Navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -64,68 +63,16 @@
 
       <h1 id="projects" ng-click="showDiv('project')" class="clickable">Projects</h1>
       <div ng-show="showType == 'project'" class="row col-xs-12 col-md-12">
-        <div class="col-md-1 col-xs-1"></div>
-        <!-- NYFI -->
-        <div class="project col-md-2 col-xs-2">
+        <div ng-repeat="p in projects" class="project col-md-2 col-xs-2">
           <div class="project-info">
-            <a href="http://nyfi.herokuapp.com/">
-              <h1 class="project-title clickable">NYfi</h1>
-              <img src="images/nyfi.png" class="project-pic">
+            <a href="{{p.url}}">
+              <h1 class="project-title clickable">{{p.title}}</h1>
+              <img ng-src="{{p.image}}" class="project-pic">
             </a>
-            <p>First Rails application: search app for NYC's wifi hotspots and their Yelp ratings</p>
-
-            <h3><a href="https://github.com/pjwl33/NYfi" class="clickable">SOURCE CODE</a></h3>
+            <p>{{p.description}}</p>
+            <h3><a href="{{p.source}}" class="clickable">SOURCE CODE</a></h3>
           </div>
         </div>
-        <!-- RATE MY LUNCH -->
-        <div class="project col-md-2 col-xs-2">
-          <div class="project-info">
-            <a href="http://ratemylunch.herokuapp.com/">
-              <h1 class="project-title clickable">RateMyLunch</h1>
-              <img src="images/ratemylunch.png" class="project-pic">
-            </a>
-            <p>A fun and innovative game for Employees to inspire co-workers to eat the best lunches for their health needs.<br><br><a class="info-link clickable" href="http://hackdiningnyc.foodtechconnect.com/">Hack//Dining NYC Hackathon</a> Project</p>
-
-            <h3><a href="https://github.com/pjwl33/lunch_it" class="clickable">SOURCE CODE</a></h3>
-          </div>
-        </div>
-        <!-- EMOCHAT -->
-        <div class="project col-md-2 col-xs-2">
-          <div class="project-info">
-            <a href="http://emochat.herokuapp.com/">
-              <h1 class="project-title clickable">Emochat</h1>
-              <img src="images/emochat.png" class="project-pic">
-            </a>
-            <p>Chat app with changing avatar icons according to user hashtag and self-taken photos.</p>
-
-            <h3><a href="https://github.com/originalblend337/chat_app" class="clickable">SOURCE CODE</a></h3>
-          </div>
-        </div>
-        <!-- GROUP.PROV -->
-        <div class="project col-md-2 col-xs-2">
-          <div class="project-info">
-            <a href="http://groupprov.herokuapp.com/">
-              <h1 class="project-title clickable">Group.pRov</h1>
-              <img src="images/groupprov.png" class="project-pic">
-            </a>
-            <p>Music playing app where users can record, play, and loop tracks with others using their QWERTY keyboards. Simulating MIDI playback functionality.</p>
-
-            <h3><a href="https://github.com/pjwl33/Group.pRov" class="clickable">SOURCE CODE</a></h3>
-          </div>
-        </div>
-        <!-- HATE TO LOVE -->
-        <div class="project col-md-2 col-xs-2">
-          <div class="project-info">
-            <a href="http://hatetolove.herokuapp.com/">
-              <h1 class="project-title clickable">HateToLove</h1>
-              <img src="images/hatetolove.jpg" class="project-pic">
-            </a>
-            <p>Rails application (iOS version in the works) where users can find the loves of their lives by hating the same things</p>
-
-            <h3><a href="https://github.com/pjwl33/date_app" class="clickable">SOURCE CODE</a></h3>
-          </div>
-        </div>
-        <div class="col-md-1 col-xs-1"></div>
       </div>
 
       <!-- contacts -->
