@@ -25,7 +25,7 @@ body {
 .clickable:hover {
   cursor: pointer;
   color: #01B6AD !important;
-  transition: .4s all !important;
+  transition: .3s all !important;
   text-shadow: 0px 0px 10px #fff !important;
 }
 h1 {font-family: 'BrandonBold', serif !important;}
@@ -35,12 +35,15 @@ a {
   color: #fff !important;
 }
 
-.navbar-header a{
+.navbar a{
   text-transform: uppercase;
   letter-spacing: 1.5px !important;
   color: #fff;
   font-family: 'BrandonBold', serif !important;
   font-size: 32pt;
+}
+.menu-icon {
+  font-size: 16pt !important;
 }
 #resume-icon {color: #fff; margin-right: 5px;}
 
@@ -77,7 +80,7 @@ a {
 .project-pic:hover {
   box-shadow: 0px 0px 35px #01B6AD;
   cursor: hand;
-  transition: .4s;
+  transition: .3s;
 }
 .project {
   margin: 10px !important;
