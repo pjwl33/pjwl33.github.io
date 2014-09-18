@@ -67,7 +67,7 @@
           <div class="project-info">
             <a href="{{p.url}}">
               <h1 class="project-title clickable">{{p.title}}</h1>
-              <img ng-src="{{p.image}}" class="project-pic">
+              <img src="{{p.image}}" class="project-pic">
             </a>
             <p>{{p.description}}</p>
             <h3><a href="{{p.source}}" class="clickable">SOURCE CODE</a></h3>
@@ -75,7 +75,6 @@
         </div>
       </div>
 
-      <!-- contacts -->
       <h1 id="contacts" ng-click="showDiv('contact')" class="clickable">Get in Touch</h1>
       <div ng-show="showType == 'contact'" class="row col-xs-12 col-md-12">
         <h3 class="contact-info">
@@ -100,7 +99,6 @@
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="app.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  <script src="ui-bootstrap.js"></script>
 </body>
 
 <footer>&copy Paul Jinwoo Lee 2014 (Panda Lover & Mind Explorer). All rights reserved.</footer>

@@ -23,7 +23,7 @@ function picChanger(imgArray) {
 }
 
 function startAngular(){
-  var angApp = angular.module('myApp', ['ui.bootstrap']);
+  var angApp = angular.module('myApp', []);
 
   var myProjects = [
     {
