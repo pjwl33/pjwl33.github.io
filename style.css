@@ -26,14 +26,16 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #ffffcc;
-  text-shadow: 0px 0px 20px #333;;
+  text-shadow: 0px 0px 20px #333;
   z-index: 1;
 }
-h1 {margin: 0.3em auto; font-family: 'Gentium Basic', serif;}
-a:hover {color: #01B6AD; cursor: hand; transition: .4s all;}
+.clickable:hover {
+  cursor: pointer;
+  color: #01B6AD !important;
+  transition: .4s all !important;
+}
+h1 {margin: 0.3em auto; font-family: 'BrandonBold', serif;}
 a {text-decoration: none; color: #ffffcc;}
-h1:hover {color: #01B6AD; cursor: hand; transition: .4s all;}
-i:hover {color: #01B6AD; cursor: hand; transition: .4s all;}
 i {color: #ffffcc; padding: 5px;}
 
 .fixed-header {
@@ -51,18 +53,11 @@ i {color: #ffffcc; padding: 5px;}
 #header-name {
   letter-spacing: 1.5px;
   color: #ffffcc;
-  cursor: auto;
   float: left;
 }
 #header-resume {
   letter-spacing: 1.5px;
-  cursor: auto;
   float: right;
-}
-#header-name:hover, #resume:hover, #resume-icon:hover {
-  color: #01B6AD;
-  cursor: hand;
-  transition: .4s all;
 }
 #resume-icon {color: #ffffcc; margin-right: 5px;}
 #resume {color: #ffffcc;}
@@ -92,6 +87,7 @@ i {color: #ffffcc; padding: 5px;}
 .info-link {
   color: #01B6AD;
   font-weight: bold;
+  text-shadow: 0px 0px 20px #333;;
 }
 
 .project {
@@ -123,9 +119,7 @@ i {color: #ffffcc; padding: 5px;}
 }
 
 /*contact & sites*/
-#email:hover {color: #01B6AD; transition: .4s all;}
 #email-icon, #phone-icon {font-size: 30px;}
-#phone-icon:hover {color: #333; cursor: auto;}
 
 .sites-bar {
   display: inline-block;
@@ -136,52 +130,4 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
-}
-
-@media only screen and (max-device-width: 480px) {
-  h1 {
-    font-size: 45px;
-    font-family: 'Garamond';
-  }
-  body {
-    background-size: auto 100%;
-  }
-  .header-content {
-    margin: auto 2em;
-  }
-  #about, #projects, #contacts {
-    font-size: 135px;
-  }
-  .profile-pic {
-    max-width: 600px;
-    max-height: 600px;
-    margin-top: 10px;
-  }
-  .info-text {
-    font-size: 3em;
-    line-height: 60px;
-  }
-  .project-pic{
-    width: 600px;
-    height: 600px;
-  }
-  .project-info {
-    max-width: 100%;
-    line-height: 60px;
-  }
-  .project {
-    font-size: 50px;
-    margin: 45px auto;
-  }
-  .project-title {
-    font-size: 75px;
-  }
-  #email-icon, #phone-icon {font-size: 100px;}
-  .contact-info {font-size: 60px;}
-  .sites-bar {
-    font-size: 100px;
-  }
-  footer {
-    visibility: hidden;
-  }
 }
