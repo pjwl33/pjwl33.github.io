@@ -19,14 +19,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18pt;
   color: #fff !important;
-  text-shadow: 0px 0px 10px #01B6AD !important;
+  text-shadow: 5px 5px 5px #333;
   z-index: 1;
 }
 .clickable:hover {
   cursor: pointer;
   color: #01B6AD !important;
-  transition: .3s all !important;
-  text-shadow: 0px 0px 10px #fff !important;
+  /*transition: .3s all !important;*/
+  text-shadow: 5px 5px 5px #333;
 }
 h1 {font-family: 'BrandonBold', serif !important;}
 i {color: #fff; padding: 5px;}
@@ -42,9 +42,10 @@ a {
   font-family: 'BrandonBold', serif !important;
   font-size: 32pt;
 }
-.menu-icon {
-  font-size: 16pt !important;
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
+
 #resume-icon {color: #fff; margin-right: 5px;}
 
 #about, #projects, #contacts {
@@ -67,7 +68,7 @@ a {
 .info-link {
   color: #01B6AD;
   font-weight: bold;
-  text-shadow: 0px 0px 10px #01B6AD;;
+  text-shadow: 5px 5px 5px #333;
 }
 
 .project-pic {
@@ -80,7 +81,7 @@ a {
 .project-pic:hover {
   box-shadow: 0px 0px 35px #01B6AD;
   cursor: hand;
-  transition: .3s;
+  /*transition: .3s;*/
 }
 .project {
   margin: 10px !important;
