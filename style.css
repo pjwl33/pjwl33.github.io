@@ -45,7 +45,7 @@ a {
 .navbar-inverse {
   background-color: rgba(0, 0, 0, 0.7) !important;
 }
-
+.row {margin: 25px !important;}
 #resume-icon {color: #fff; margin-right: 5px;}
 
 #about, #projects, #contacts {
@@ -91,7 +91,7 @@ a {
 }
 
 /*contact & sites*/
-#email-icon, #phone-icon {font-size: 30px;}
+#email-icon, #phone-icon {font-size: 28pt; margin-right: 15px !important;}
 
 .sites-bar {
   display: inline-block;

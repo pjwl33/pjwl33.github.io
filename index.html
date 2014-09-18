@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" text="text/css">
 </head>
 
-<body ng-app="ang">
+<body ng-app="myApp">
   <div ng-controller="MyController">
     <!-- START NAVBAR -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -63,7 +63,7 @@
       </div>
 
       <h1 id="projects" ng-click="showDiv('project')" class="clickable">Projects</h1>
-      <div ng-show="showType = 'project'" class="row col-xs-12 col-md-12">
+      <div ng-show="showType == 'project'" class="row col-xs-12 col-md-12">
         <div class="col-md-1 col-xs-1"></div>
         <!-- NYFI -->
         <div class="project col-md-2 col-xs-2">
@@ -131,10 +131,14 @@
       <!-- contacts -->
       <h1 id="contacts" ng-click="showDiv('contact')" class="clickable">Get in Touch</h1>
       <div ng-show="showType == 'contact'" class="row col-xs-12 col-md-12">
-        <a href="mailto:paul.leejw@gmail.com"><i class="clickable fa fa-envelope" id="email-icon"></i></a>
-        <h3 class="contact-info"><a class="clickable" href="mailto:paul.leejw@gmail.com" id="email">paul.leejw@gmail.com</a></h3>
-        <i class="clickable fa fa-phone" id="phone-icon"></i>
-        <h3 class="clickable contact-info">931.546.9660</h3>
+        <h3 class="contact-info">
+          <a href="mailto:paul.leejw@gmail.com"><i class="clickable fa fa-envelope" id="email-icon"></i></a>
+          <a class="clickable" href="mailto:paul.leejw@gmail.com" id="email">paul.leejw@gmail.com</a>
+        </h3>
+        <h3 class="clickable contact-info">
+          <i class="clickable fa fa-phone" id="phone-icon"></i>
+          931.546.9660
+        </h3>
         <div class="sites-bar">
           <a href="https://www.linkedin.com/in/pauljwlee"><i class="clickable fa fa-linkedin"></i></a>
           <a href="https://www.facebook.com/pjwlee"><i class="clickable fa fa-facebook"></i></a>
@@ -147,9 +151,9 @@
   </div>
 
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
-  <script src="ui-bootstrap.js"></script>
   <script src="app.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="ui-bootstrap.js"></script>
 </body>
 
 <footer>&copy Paul Jinwoo Lee 2014 (Panda Lover & Mind Explorer). All rights reserved.</footer>

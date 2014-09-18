@@ -8,6 +8,7 @@ $(document).ready(function() {
 
   picChanger(imgArray);
   setInterval(function(){ picChanger(imgArray); }, 8000);
+
   startAngular();
 });
 
@@ -22,11 +23,13 @@ function picChanger(imgArray) {
 }
 
 function startAngular(){
-  var ang = angular.module('ang', ['ui.bootstrap']);
+  var angApp = angular.module('myApp', ['ui.bootstrap']);
 
-  ang.controller('MyController', ['$scope', '$animate', function($scope, $animate){
+  angApp.controller('MyController', function($scope){
+    $scope.showType = false;
+
     $scope.showDiv = function(divType){
-      $scope.showType = divType;
+      $scope.showType = $scope.showType == divType? false : divType;
     };
-  }]);
+  });
 }
