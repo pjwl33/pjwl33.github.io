@@ -2,7 +2,6 @@ $(document).ready(function() {
   $('#about-wrap').hide();
   $('#project-wrap').hide();
   $('#contact-wrap').hide();
-  $('a').attr('target', '_blank');
 
   var first = $('#about-pic-1').attr('src');
   var second = $('#about-pic-2').attr('src');

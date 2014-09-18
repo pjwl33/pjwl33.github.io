@@ -6,7 +6,8 @@ body, html {overflow-x: hidden; overflow-y: auto;}
   background-color: rgba(0, 0, 0, 0)
 }
 body {
-  background-image: url('images/brooklyn.jpg');
+  /*Background Image Artwork by Jamie Beck & Kevin Burg @ Cinemagraphs.com */
+  background: url(images/neverendingcommute.gif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,63 +15,38 @@ body {
   z-index: -1;
 }
 
-/*#blue-tint {
-  width: 100%;
-  height: 100%;
-  background-color: #002157;
-  opacity: 0.85;
-  z-index: -1;
-  position: fixed;
-}*/
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  color: #ffffcc;
-  text-shadow: 0px 0px 20px #333;
+  font-size: 18pt;
+  color: #fff !important;
+  text-shadow: 0px 0px 10px #01B6AD !important;
   z-index: 1;
 }
 .clickable:hover {
   cursor: pointer;
   color: #01B6AD !important;
   transition: .4s all !important;
+  text-shadow: 0px 0px 10px #fff !important;
 }
-h1 {margin: 0.3em auto; font-family: 'BrandonBold', serif;}
-a {text-decoration: none; color: #ffffcc;}
-i {color: #ffffcc; padding: 5px;}
+h1 {font-family: 'BrandonBold', serif !important;}
+i {color: #fff; padding: 5px;}
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
 
-.fixed-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(51, 51, 51, 0.7);
-  z-index: 2;
+.navbar-header a{
+  text-transform: uppercase;
+  letter-spacing: 1.5px !important;
+  color: #fff;
+  font-family: 'BrandonBold', serif !important;
+  font-size: 32pt;
 }
-.header-content {
-  width: 85%;
-  margin: auto 5em;
-}
-#header-name {
-  letter-spacing: 1.5px;
-  color: #ffffcc;
-  float: left;
-}
-#header-resume {
-  letter-spacing: 1.5px;
-  float: right;
-}
-#resume-icon {color: #ffffcc; margin-right: 5px;}
-#resume {color: #ffffcc;}
+#resume-icon {color: #fff; margin-right: 5px;}
 
 #about, #projects, #contacts {
-  margin-top: 1.5em;
-  text-align: center;
+  margin-top: 2.5em !important;
   font-size: 4.5em;
-}
-.wrapper {
-  max-width: 80%;
-  text-align: center;
-  margin: auto;
 }
 
 .profile-pic {
@@ -78,6 +54,7 @@ i {color: #ffffcc; padding: 5px;}
   max-height: 250px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px #333;
+  margin: 15px !important;
 }
 .info-text {
   line-height: 25px;
@@ -87,21 +64,12 @@ i {color: #ffffcc; padding: 5px;}
 .info-link {
   color: #01B6AD;
   font-weight: bold;
-  text-shadow: 0px 0px 20px #333;;
+  text-shadow: 0px 0px 10px #01B6AD;;
 }
 
-.project {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  margin: auto 3em;
-}
-.project-title {
-  margin-bottom: 30px;
-}
 .project-pic {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 175px;
+  max-height: 175px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px #333;
   background: #ffffff;
@@ -111,11 +79,11 @@ i {color: #ffffcc; padding: 5px;}
   cursor: hand;
   transition: .4s;
 }
+.project {
+  margin: 10px !important;
+}
 .project-info {
-  max-width: 200px;
-  text-align: center;
   letter-spacing: 1px;
-  line-height: 20px;
 }
 
 /*contact & sites*/
@@ -130,4 +98,5 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
+  left: 0;
 }
