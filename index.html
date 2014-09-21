@@ -4,14 +4,15 @@
   <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" text="text/css">
   <link rel="stylesheet" href="style.css">
-  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="app.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="javascripts/angular.min.js" type="text/javascript"></script>
+  <script src="javascripts/ui-bootstrap.min.js" type="text/javascript"></script>
+  <script src="javascripts/app.js" type="text/javascript"></script>
 </head>
 
-<div id="backdrop"></div>
-<div id="blue-tint"></div>
-<body>
+<body ng-controller="PageController" class="container">
   <div class="fixed-header">
     <div class="header-content">
       <h1 id="header-name" onclick="showDiv('top')">PAUL JINWOO LEE</h1>
@@ -19,7 +20,7 @@
     </div>
   </div>
 
-  <div class="wrapper">
+  <div class="col-xs-12">
     <h1 id="about" onclick="showDiv('about-wrap')">About Me</h1>
     <div id="about-wrap">
       <img src="" class="profile-pic" id="about-pic">
@@ -43,44 +44,11 @@
 
     <h1 id="projects" onclick="showDiv('project-wrap')">Projects</h1>
     <div id="project-wrap">
-      <!-- NYFI -->
-      <div class="project">
+      <div class="project col-xs-2" ng-repeat="p in projects">
         <div class="project-info">
-          <a href="http://nyfi.herokuapp.com/"><h1 class="project-title">NYfi</h1><img src="images/nyfi.png" class="project-pic"></a>
-          <p>First Rails application: search app for NYC's wifi hotspots and their Yelp ratings</p>
-          <h3><a href="https://github.com/pjwl33/NYfi">SOURCE CODE</a></h3>
-        </div>
-      </div>
-      <!-- RATE MY LUNCH -->
-      <div class="project">
-        <div class="project-info">
-          <a href="http://ratemylunch.herokuapp.com/"><h1 class="project-title">RateMyLunch</h1><img src="images/ratemylunch.png" class="project-pic"></a>
-          <p>A fun and innovative game for Employees to inspire co-workers to eat the best lunches for their health needs.<br><br><a class="info-link" href="http://hackdiningnyc.foodtechconnect.com/">Hack//Dining NYC Hackathon</a> Project</p>
-          <h3><a href="https://github.com/pjwl33/lunch_it">SOURCE CODE</a></h3>
-        </div>
-      </div>
-      <!-- EMOCHAT -->
-      <div class="project">
-        <div class="project-info">
-          <a href="http://emochat.herokuapp.com/"><h1 class="project-title">Emochat</h1><img src="images/emochat.png" class="project-pic"></a>
-          <p>Chat app with changing avatar icons according to user hashtag and self-taken photos.</p>
-          <h3><a href="https://github.com/originalblend337/chat_app">SOURCE CODE</a></h3>
-        </div>
-      </div>
-      <!-- GROUP.PROV -->
-      <div class="project">
-        <div class="project-info">
-          <a href="http://groupprov.herokuapp.com/"><h1 class="project-title">Group.pRov</h1><img src="images/groupprov.png" class="project-pic"></a>
-          <p>Music playing app where users can record, play, and loop tracks with others using their QWERTY keyboards. Simulating MIDI playback functionality.</p>
-          <h3><a href="https://github.com/pjwl33/Group.pRov">SOURCE CODE</a></h3>
-        </div>
-      </div>
-      <!-- HATE TO LOVE -->
-      <div class="project">
-        <div class="project-info">
-          <a href="http://hatetolove.herokuapp.com/"><h1 class="project-title">Hate To Love</h1><img src="images/hatetolove.jpg" class="project-pic"></a>
-          <p>Rails application (iOS version in the works) where users can find the loves of their lives by hating the same things</p>
-          <h3><a href="https://github.com/pjwl33/date_app">SOURCE CODE</a></h3>
+          <a ng-href="{{p.url}}"><h1 class="project-title">{{p.name}}</h1><img ng-src="{{p.image}}" class="project-pic"></a>
+          <p>{{p.description}}</p>
+          <h3><a ng-href="{{p.sourceCode}}">SOURCE CODE</a></h3>
         </div>
       </div>
     </div>
