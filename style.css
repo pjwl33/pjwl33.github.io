@@ -14,44 +14,50 @@ body {
   background-size: cover;
   z-index: -1;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16pt;
-  color: #fff !important;
+  font-size: 18pt;
+  color: #FFFFCC !important;
   text-shadow: 5px 5px 5px #333;
+  letter-spacing: 1px;
   z-index: 1;
 }
 .clickable:hover {
   cursor: pointer;
-  color: #01B6AD !important;
-  /*transition: .3s all !important;*/
+  color: #CCCCFF !important;
   text-shadow: 5px 5px 5px #333;
+  transition: .2s;
 }
 h1 {
-  font-family: 'BrandonBold',
-  serif !important;
+  font-family: 'BrandonBold', serif !important;
 }
-i {color: #fff; padding: 5px;}
+i {
+  color: #FFFFCC;
+  padding: 5px;
+}
 a {
   text-decoration: none !important;
-  color: #fff !important;
+  color: #FFFFCC !important;
 }
 .navbar a{
   text-transform: uppercase;
   letter-spacing: 1.5px !important;
-  color: #fff;
+  color: #FFFFCC;
   font-family: 'BrandonBold', serif !important;
   font-size: 32pt;
 }
 .navbar-inverse {
   background-color: rgba(0, 0, 0, 0.7) !important;
 }
-.row {margin: 25px !important;}
-#resume-icon {color: #fff; margin-right: 5px;}
-
+.row {
+  margin: 25px !important;
+}
+#resume-icon {
+  color: #FFFFCC;
+  margin-right: 5px;
+}
 #about, #projects, #contacts {
   margin-top: 2.5em !important;
   font-size: 4.5em;
 }
-
 .profile-pic {
   max-width: 250px;
   max-height: 250px;
@@ -61,38 +67,32 @@ a {
 }
 .info-text {
   line-height: 25px;
-  font-weight: bold;
   font-size: 18px;
 }
 .info-link {
-  color: #01B6AD;
+  color: #CCCCFF;
   font-weight: bold;
   text-shadow: 5px 5px 5px #333;
 }
-
 .project-pic {
   max-width: 175px;
   max-height: 175px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px #333;
-  background: #ffffff;
+  background: #fff;
   margin: 15px 0 !important;
 }
 .project-pic:hover {
-  box-shadow: 0px 0px 35px #01B6AD;
+  box-shadow: 0px 0px 35px #CCCCFF;
   cursor: hand;
-  /*transition: .3s;*/
+  transition: .2s;
 }
 .project {
   margin: 2.5em !important;
 }
-.project-info {
-  letter-spacing: 1px;
+#email-icon, #phone-icon {
+  font-size: 28pt;
 }
-
-/*contact & sites*/
-#email-icon, #phone-icon {font-size: 28pt; margin-right: 15px !important;}
-
 .sites-bar {
   display: inline-block;
   font-size: 50px;
@@ -102,4 +102,5 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
+  left: 0;
 }
