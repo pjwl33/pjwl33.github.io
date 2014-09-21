@@ -6,69 +6,49 @@ body, html {overflow-x: hidden; overflow-y: auto;}
   background-color: rgba(0, 0, 0, 0)
 }
 body {
-  background-image: url('images/brooklyn.jpg');
+  /*Background Image Artwork by Jamie Beck & Kevin Burg @ Cinemagraphs.com */
+  background: url(images/neverendingcommute.gif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   z-index: -1;
-  font-size: 16pt;
   font-family: 'Open Sans', sans-serif;
-  color: #ffffcc;
-  text-shadow: 0px 0px 20px #333;;
+  font-size: 16pt;
+  color: #fff !important;
+  text-shadow: 5px 5px 5px #333;
   z-index: 1;
 }
-
+.clickable:hover {
+  cursor: pointer;
+  color: #01B6AD !important;
+  /*transition: .3s all !important;*/
+  text-shadow: 5px 5px 5px #333;
+}
 h1 {
-  margin: 0.3em auto;
-  font-family: 'Gentium Basic', serif;
+  font-family: 'BrandonBold',
+  serif !important;
 }
+i {color: #fff; padding: 5px;}
 a {
-  text-decoration: none;
-  color: #ffffcc;
+  text-decoration: none !important;
+  color: #fff !important;
 }
-i {
-  color: #ffffcc;
-  padding: 5px;
+.navbar a{
+  text-transform: uppercase;
+  letter-spacing: 1.5px !important;
+  color: #fff;
+  font-family: 'BrandonBold', serif !important;
+  font-size: 32pt;
 }
-
-i:hover, h1:hover, h3:hover {color: #01B6AD; transition: .4s all;}
-i, h1, h3 { cursor: pointer;}
-
-.fixed-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(51, 51, 51, 0.7);
-  z-index: 2;
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
-.header-content {
-  width: 85%;
-  margin: auto 5em;
-}
-#header-name {
-  letter-spacing: 1.5px;
-  color: #ffffcc;
-  cursor: auto;
-  float: left;
-}
-#header-resume {
-  letter-spacing: 1.5px;
-  cursor: auto;
-  float: right;
-}
-#header-name:hover, #resume:hover, #resume-icon:hover {
-  color: #01B6AD;
-  cursor: hand;
-  transition: .4s all;
-}
-#resume-icon {color: #ffffcc; margin-right: 5px;}
-#resume {color: #ffffcc;}
+.row {margin: 25px !important;}
+#resume-icon {color: #fff; margin-right: 5px;}
 
 #about, #projects, #contacts {
-  margin-top: 1.5em;
-  text-align: center;
+  margin-top: 2.5em !important;
   font-size: 4.5em;
 }
 
@@ -77,6 +57,7 @@ i, h1, h3 { cursor: pointer;}
   max-height: 250px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px #333;
+  margin: 15px !important;
 }
 .info-text {
   line-height: 25px;
@@ -86,40 +67,31 @@ i, h1, h3 { cursor: pointer;}
 .info-link {
   color: #01B6AD;
   font-weight: bold;
+  text-shadow: 5px 5px 5px #333;
 }
 
-.project {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  margin: auto 3em;
-}
-.project-title {
-  margin-bottom: 30px;
-}
 .project-pic {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 175px;
+  max-height: 175px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px #333;
   background: #ffffff;
+  margin: 15px 0 !important;
 }
 .project-pic:hover {
   box-shadow: 0px 0px 35px #01B6AD;
   cursor: hand;
-  transition: .4s;
+  /*transition: .3s;*/
+}
+.project {
+  margin: 2.5em !important;
 }
 .project-info {
-  max-width: 200px;
-  text-align: center;
   letter-spacing: 1px;
-  line-height: 20px;
 }
 
 /*contact & sites*/
-#email:hover {color: #01B6AD; transition: .4s all;}
-#email-icon, #phone-icon {font-size: 30px;}
-#phone-icon:hover {color: #333; cursor: auto;}
+#email-icon, #phone-icon {font-size: 28pt; margin-right: 15px !important;}
 
 .sites-bar {
   display: inline-block;
@@ -131,5 +103,3 @@ footer {
   position: fixed;
   bottom: 0;
 }
-
-.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
