@@ -60,7 +60,14 @@ function startAngular(){
       image: "images/hatetolove.jpg",
       description: "Rails application (iOS version in the works) where users can find the loves of their lives by hating the same things",
       source: "https://github.com/pjwl33/date_app"
-    }
+    },
+    {
+      url: "http://www.lolseriousbiz.com",
+      title: "seriousBIZ",
+      image: "images/lolseriousbiz.png",
+      description: "Angular/Rails application connected with Riot's League of Legends API. Also a fan-site for my teammates <3",
+      source: "https://github.com/pjwl33/serious_biz_lol"
+    },
   ];
 
   angApp.controller('MyController', function($scope){

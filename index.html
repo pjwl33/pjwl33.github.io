@@ -40,7 +40,7 @@
 
     <div class="container">
       <h1 id="about" ng-click="showDiv('about')" class="clickable">About Me</h1>
-      <div ng-show="showType == 'about'" class="row  col-xs-12 col-md-12">
+      <div ng-show="showType == 'about'" class="row  col-sm-12 col-md-12">
         <img src="" class="profile-pic" id="about-pic">
         <img src="pic_changer/pic1.png" id="about-pic-1" hidden>
         <img src="pic_changer/pic2.png" id="about-pic-2" hidden>
@@ -62,8 +62,8 @@
       </div>
 
       <h1 id="projects" ng-click="showDiv('project')" class="clickable">Projects</h1>
-      <div ng-show="showType == 'project'" class="row col-xs-12 col-md-12">
-        <div ng-repeat="p in projects" class="project col-md-2 col-xs-2">
+      <div ng-show="showType == 'project'" class="row col-sm-12 col-md-12">
+        <div ng-repeat="p in projects" class="project col-md-2 col-sm-2">
           <div class="project-info">
             <a href="{{p.url}}">
               <h1 class="project-title clickable">{{p.title}}</h1>
@@ -76,7 +76,7 @@
       </div>
 
       <h1 id="contacts" ng-click="showDiv('contact')" class="clickable">Get in Touch</h1>
-      <div ng-show="showType == 'contact'" class="row col-xs-12 col-md-12">
+      <div ng-show="showType == 'contact'" class="row col-sm-12 col-md-12">
         <h3 class="contact-info">
           <a href="mailto:paul.leejw@gmail.com"><i class="clickable fa fa-envelope" id="email-icon"></i></a>
           <a class="clickable" href="mailto:paul.leejw@gmail.com" id="email">paul.leejw@gmail.com</a>
