@@ -66,7 +66,7 @@ function startAngular(){
       title: "seriousBIZ",
       image: "images/lolseriousbiz.png",
       description: "Angular/Rails application connected with Riot's League of Legends API. Also a fan-site for my teammates <3",
-      source: "https://github.com/pjwl33/serious_biz_lol"
+      source: "https://github.com/pjwl33/lol_app"
     },
   ];
 
