@@ -72,7 +72,7 @@ function startAngular(){
       url: "http://www.leedentalgroup.net",
       title: "LeeDentalGroup",
       image: "images/leedentalgroup.png",
-      description: "Freelance Project for 'Lee Dental Group', a family-oriented dental clinic in Michigan. Website was made using Angular.js, Angular-Parallax, Boostrap, and Love.",
+      description: "Freelance Project for 'Lee Dental Group', a family-oriented dental clinic in Michigan. Built with Angular.js, Angular-Parallax, Boostrap, and Love.",
       source: "https://github.com/leedentalgroup/leedentalgroup.github.io"
     },
   ];
