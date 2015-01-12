@@ -70,9 +70,9 @@ function startAngular(){
     },
     {
       url: "http://www.leedentalgroup.net",
-      title: "Lee Dental Group",
+      title: "LeeDentalGroup",
       image: "images/leedentalgroup.png",
-      description: "Freelance Project for 'Lee Dental Group', a family-oriented dental clinic in Farmington Hills, Michigan. Website was made using Angular.js, Angular-Parallax, Boostrap, and Love.",
+      description: "Freelance Project for 'Lee Dental Group', a family-oriented dental clinic in Michigan. Website was made using Angular.js, Angular-Parallax, Boostrap, and Love.",
       source: "https://github.com/leedentalgroup/leedentalgroup.github.io"
     },
   ];
