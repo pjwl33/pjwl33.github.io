@@ -30,14 +30,14 @@ function startAngular(){
       url: "http://nyfi.herokuapp.com/",
       title: "NYfi",
       image: "images/nyfi.png",
-      description: "First Rails application: search app for NYC's wifi hotspots and their Yelp ratings",
+      description: "First Rails application: search app for NYC's wifi hotspots and their Yelp ratings.",
       source: "https://github.com/pjwl33/NYfi"
     },
     {
       url: "http://ratemylunch.herokuapp.com/",
       title: "RateMyLunch",
       image: "images/ratemylunch.png",
-      description: "A fun and innovative game for Employees to inspire co-workers to eat the best lunches for their health needs. Hack//Dining NYC Hackathon Project",
+      description: "A fun and innovative game for Employees to inspire co-workers to eat the best lunches for their health needs. Hack//Dining NYC Hackathon Project.",
       source: "https://github.com/pjwl33/lunch_it"
     },
     {
@@ -58,15 +58,22 @@ function startAngular(){
       url: "http://hatetolove.herokuapp.com/",
       title: "HateToLove",
       image: "images/hatetolove.jpg",
-      description: "Rails application (iOS version in the works) where users can find the loves of their lives by hating the same things",
+      description: "Rails application (iOS version in the works) where users can find the loves of their lives by hating the same things.",
       source: "https://github.com/pjwl33/date_app"
     },
     {
       url: "http://www.lolseriousbiz.com",
       title: "seriousBIZ",
       image: "images/lolseriousbiz.png",
-      description: "Angular/Rails application connected with Riot's League of Legends API. Also a fan-site for my teammates <3",
+      description: "Angular/Rails application connected with Riot's League of Legends API. Also a fan-site for my teammates from LCS Season 4.",
       source: "https://github.com/pjwl33/lol_app"
+    },
+    {
+      url: "http://www.leedentalgroup.net",
+      title: "Lee Dental Group",
+      image: "images/leedentalgroup.png",
+      description: "Freelance Project for 'Lee Dental Group', a family-oriented dental clinic in Farmington Hills, Michigan. Website was made using Angular.js, Angular-Parallax, Boostrap, and Love.",
+      source: "https://github.com/leedentalgroup/leedentalgroup.github.io"
     },
   ];
 
