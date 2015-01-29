@@ -54,13 +54,13 @@ function startAngular(){
       description: "Music playing app where users can record, play, and loop tracks with others using their QWERTY keyboards. Simulating MIDI playback functionality.",
       source: "https://github.com/pjwl33/Group.pRov"
     },
-    {
-      url: "http://hatetolove.herokuapp.com/",
-      title: "HateToLove",
-      image: "images/hatetolove.jpg",
-      description: "Rails application (iOS version in the works) where users can find the loves of their lives by hating the same things.",
-      source: "https://github.com/pjwl33/date_app"
-    },
+    // {
+    //   url: "http://hatetolove.herokuapp.com/",
+    //   title: "HateToLove",
+    //   image: "images/hatetolove.jpg",
+    //   description: "Rails application (iOS version in the works) where users can find the loves of their lives by hating the same things.",
+    //   source: "https://github.com/pjwl33/date_app"
+    // },
     {
       url: "http://www.lolseriousbiz.com",
       title: "seriousBIZ",
