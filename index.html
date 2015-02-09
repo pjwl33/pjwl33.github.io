@@ -8,6 +8,8 @@
   <link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="hover_animations.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" text="text/css">
 </head>
 
@@ -65,14 +67,14 @@
 
       <h1 id="projects" ng-click="showDiv('project')" class="clickable">Projects</h1>
       <div ng-show="showType == 'project'" class="row col-sm-12 col-md-12">
-        <div ng-repeat="p in projects" class="project col-md-2 col-sm-2">
-          <div class="project-info">
-            <a href="{{p.url}}">
-              <h1 class="project-title clickable">{{p.title}}</h1>
-              <img src="{{p.image}}" class="project-pic">
-            </a>
+        <div ng-repeat="p in projects" class="view view-first">
+          <img src="{{p.image}}" class="project-pic">
+          <div class="mask"></div>
+          <div class="content">
+            <h2>{{p.title}}</h2>
             <p>{{p.description}}</p>
-            <h3><a href="{{p.source}}" class="clickable">SOURCE CODE</a></h3>
+            <a href="{{p.url}}" class="info">SITE</a>
+            <a href="{{p.source}}" class="info">SOURCE</a>
           </div>
         </div>
       </div>

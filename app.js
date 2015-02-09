@@ -9,6 +9,7 @@ $(document).ready(function() {
   picChanger(imgArray);
   setInterval(function(){ picChanger(imgArray); }, 8000);
 
+  // backgroundVideoStart();
   startAngular();
 });
 
@@ -21,6 +22,31 @@ function picChanger(imgArray) {
     $(this).fadeIn(700);
   });
 }
+
+// function backgroundVideoStart() {
+//   var v = document.getElementById('v');
+//   var canvas = document.getElementById('c');
+//   var context = canvas.getContext('2d');
+
+//   var cw = Math.floor(canvas.clientWidth / 100);
+//   var ch = Math.floor(canvas.clientHeight / 100);
+//   canvas.width = cw;
+//   canvas.height = ch;
+
+//   v.addEventListener('play', function() {
+//     draw(this, context, cw, ch);
+//   }, false);
+
+//   c.addEventListener('')
+
+//   function draw(v, c, w, h) {
+//     if (v.paused || v.ended) return false;
+//     c.drawImage(v, 0, 0, w, h);
+//     setTimeout(draw, 20, v, c, w, h);
+//   }
+
+//   v.play();
+// }
 
 function startAngular(){
   var angApp = angular.module('myApp', []);
@@ -35,7 +61,7 @@ function startAngular(){
     },
     {
       url: "http://ratemylunch.herokuapp.com/",
-      title: "RateMyLunch",
+      title: "Rate My Lunch",
       image: "images/ratemylunch.png",
       description: "A fun and innovative game for Employees to inspire co-workers to eat the best lunches for their health needs. Hack//Dining NYC Hackathon Project.",
       source: "https://github.com/pjwl33/lunch_it"
@@ -49,7 +75,7 @@ function startAngular(){
     },
     {
       url: "http://groupprov.herokuapp.com/",
-      title: "Group.pRov",
+      title: "Group Prov",
       image: "images/groupprov.png",
       description: "Music playing app where users can record, play, and loop tracks with others using their QWERTY keyboards. Simulating MIDI playback functionality.",
       source: "https://github.com/pjwl33/Group.pRov"
@@ -63,14 +89,14 @@ function startAngular(){
     // },
     {
       url: "http://www.lolseriousbiz.com",
-      title: "seriousBIZ",
+      title: "serious biz",
       image: "images/lolseriousbiz.png",
       description: "Angular/Rails application connected with Riot's League of Legends API. Also a fan-site for my teammates from LCS Season 4.",
       source: "https://github.com/pjwl33/lol_app"
     },
     {
       url: "http://www.leedentalgroup.net",
-      title: "LeeDentalGroup",
+      title: "Lee Dental Group",
       image: "images/leedentalgroup.png",
       description: "Freelance Project for 'Lee Dental Group', a family-oriented dental clinic in Michigan. Built with Angular.js, Angular-Parallax, Boostrap, and Love.",
       source: "https://github.com/leedentalgroup/leedentalgroup.github.io"
