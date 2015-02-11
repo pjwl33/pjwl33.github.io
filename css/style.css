@@ -1,0 +1,80 @@
+body, html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0)
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  /*font-size: 18pt;*/
+  /*color: #333 !important;*/
+  letter-spacing: 1px;
+}
+/*.clickable:hover {
+  cursor: pointer;
+  color: #CCCCFF !important;
+  text-shadow: 5px 5px 5px #333;
+  transition: .2s;
+}*/
+h1 {
+  font-family: 'BrandonBold', serif !important;
+}
+/*i {
+  color: #FFFFCC;
+  padding: 5px;
+}*/
+/*a {
+  text-decoration: none !important;
+  color: #FFFFCC !important;
+}*/
+
+.box {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+
+#about-box {
+  top: 0;
+  left: 0;
+}
+
+#projects-box {
+  top: 0;
+  right: 0;
+}
+
+#contact-box {
+  bottom: 0;
+  left: 0;
+}
+
+#resume-box {
+  bottom: 0;
+  right: 0;
+}
+
+/*.profile-pic {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #333;
+  margin: 15px !important;
+}
+.project-pic {
+  width: 300px;
+  height: 250px;
+  background: #fff;
+}
+
+/*footer {
+  width: 100%;
+  position: fixed;
+  font-size: 10pt;
+  bottom: 0;
+  left: 0;
+}*/

@@ -1,0 +1,111 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0"/>
+  <link rel="icon" type="image/png" href="http://www.softwarecrew.com/wp-content/uploads/2012/07/panda_cloud_av_icon.png">
+  <link rel="stylesheet" href="css/fonts/font-awesome-4.2.0/css/font-awesome.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/fonts/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/hover_animations.css">
+  <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" text="text/css"> -->
+</head>
+
+<body ng-app="myApp">
+  <!-- <canvas id="c"></canvas>
+  <video id="v"></video> -->
+  <div ng-controller="MyController">
+    <!-- START NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand clickable" ng-click="showDiv('top')" style="margin-top:15px;">
+            PAUL JINWOO LEE
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="clickable" href="https://s3.amazonaws.com/resume-info/PJWL_Resume_053014.pdf">
+                <i class="fa fa-file-text clickable" id="resume-icon"></i>
+                RESUME
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END NAVBAR -->
+
+    <div class="container">
+      <h1 id="about" ng-click="showDiv('about')" class="clickable">About Me</h1>
+      <div ng-show="showType == 'about'" class="row  col-sm-12 col-md-12">
+        <img src="" class="profile-pic" id="about-pic">
+        <img src="pic_changer/pic1.png" id="about-pic-1" hidden>
+        <img src="pic_changer/pic2.png" id="about-pic-2" hidden>
+        <img src="pic_changer/pic3.png" id="about-pic-3" hidden>
+        <img src="pic_changer/pic4.png" id="about-pic-4" hidden>
+        <img src="pic_changer/pic5.png" id="about-pic-5" hidden>
+
+        <div class="info">
+          <p class="info-text">
+            My name is Paul Jinwoo Lee: I'm a Korean-native, Michigan-raised, and Brooklyn-living web developer. I primarily use Ruby/Rails along with Javascript/jQuery to code ideas into reality.<br>
+            <br>
+            In May 2014, I graduated from <a class="info-link clickable" href="https://generalassemb.ly/education/web-development-immersive">General Assembly's Web Development Immersive</a>, where I learned full-stack development. <br>
+            <br>
+            For 2 years prior to programming, I was on the recruiting, biz dev, and project management side of the tech industry, before I dove into the world of code. <br>
+            <br>
+            I am constantly looking to connect with passionate and intelligent developers to continue my growth as a technologist, tinkerer, and creative thinker.
+          </p>
+        </div>
+      </div>
+
+      <h1 id="projects" ng-click="showDiv('project')" class="clickable">Projects</h1>
+      <div ng-show="showType == 'project'" class="row col-sm-12 col-md-12">
+        <div ng-repeat="p in projects" class="view view-first">
+          <img src="{{p.image}}" class="project-pic">
+          <div class="mask"></div>
+          <div class="content">
+            <h2>{{p.title}}</h2>
+            <p>{{p.description}}</p>
+            <a href="{{p.url}}" class="info">SITE</a>
+            <a href="{{p.source}}" class="info">SOURCE</a>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="contacts" ng-click="showDiv('contact')" class="clickable">Get in Touch</h1>
+      <div ng-show="showType == 'contact'" class="row col-sm-12 col-md-12">
+        <h3 class="contact-info">
+          <a href="mailto:paul.leejw@gmail.com"><i class="clickable fa fa-envelope" id="email-icon"></i></a>
+          <a class="clickable" href="mailto:paul.leejw@gmail.com" id="email">paul.leejw@gmail.com</a>
+        </h3>
+        <h3 class="clickable contact-info">
+          <i class="clickable fa fa-phone" id="phone-icon"></i>
+          931.546.9660
+        </h3>
+        <div class="sites-bar">
+          <a href="https://www.linkedin.com/in/pauljwlee"><i class="clickable fa fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/pjwlee"><i class="clickable fa fa-facebook"></i></a>
+          <a href="https://twitter.com/pjwl33"><i class="clickable fa fa-twitter"></i></a>
+          <a href="https://github.com/pjwl33"><i class="clickable fa fa-github"></i></a>
+          <a href="https://angel.co/pjwl33"><i class="clickable fa fa-angellist"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+</body>
+
+<footer>&copy Paul Jinwoo Lee 2014 (Panda Lover & Mind Explorer). All rights reserved.</footer>
+</html>
