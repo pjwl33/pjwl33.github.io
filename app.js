@@ -78,12 +78,12 @@ function startCamera() {
         }
       },
       function(error) {
-        alert('Something went wrong. (error code ' + error.code + ')');
+        // alert('Something went wrong. (error code ' + error.code + ')');
         return;
       }
     );
   } else {
-    alert('Sorry, the browser you are using doesn\'t support getUserMedia');
+    // alert('Sorry, the browser you are using doesn\'t support getUserMedia');
     return;
   }
 }
