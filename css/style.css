@@ -12,26 +12,17 @@ body {
   font-family: 'Open Sans', sans-serif;
   /*font-size: 18pt;*/
   /*color: #333 !important;*/
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
-/*.clickable:hover {
-  cursor: pointer;
-  color: #CCCCFF !important;
-  text-shadow: 5px 5px 5px #333;
-  transition: .2s;
-}*/
+.pull-right {
+  float: right;
+}
 h1 {
   font-family: 'BrandonBold', serif !important;
 }
-/*i {
-  color: #FFFFCC;
-  padding: 5px;
-}*/
-/*a {
-  text-decoration: none !important;
-  color: #FFFFCC !important;
-}*/
-
+#contact-box .fa {
+  font-size: 18pt;
+}
 .box {
   width: 50%;
   height: 50%;
@@ -40,23 +31,31 @@ h1 {
 
 #about-box {
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 #projects-box {
-  top: 0;
-  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.effect-hera figcaption::before {
+  content: "Projects";
 }
 
 #contact-box {
   bottom: 0;
-  left: 0;
+  right: 0;
 }
 
 #resume-box {
-  bottom: 0;
-  right: 0;
+  top: 0;
+  left: 0;
 }
+/*#resume-box span {
+  font-size: 6pt;
+  margin-top: 25px;
+}*/
 
 /*.profile-pic {
   max-width: 250px;
@@ -70,11 +69,3 @@ h1 {
   height: 250px;
   background: #fff;
 }
-
-/*footer {
-  width: 100%;
-  position: fixed;
-  font-size: 10pt;
-  bottom: 0;
-  left: 0;
-}*/
