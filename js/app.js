@@ -1,27 +1,26 @@
 $(document).ready(function() {
-  var first = $('#about-pic-1').attr('src');
-  var second = $('#about-pic-2').attr('src');
-  var third = $('#about-pic-3').attr('src');
-  var fourth = $('#about-pic-4').attr('src');
-  var fifth = $('#about-pic-5').attr('src');
-  var imgArray = [first, second, third, fourth, fifth];
+  var resumeImage = $('#resume_image'),
+      aboutMeImage = $('#about_me_image'),
+      contactsImage = $('#contacts_image'),
+      projectsImage = $('#projects_image');
 
-  // picChanger(imgArray);
-  // setInterval(function(){ picChanger(imgArray); }, 8000);
+  var picNumber = Math.ceil(Math.random() * 6);
 
-  // startCamera();
-  // startAngular();
+  resumeImage.attr('src', 'images/backgrounds/food_' + picNumber + '.jpeg');
+  aboutMeImage.attr('src', 'images/backgrounds/animals_' + picNumber + '.jpeg');
+  contactsImage.attr('src', 'images/backgrounds/abstract_' + picNumber + '.jpeg');
+  projectsImage.attr('src', 'images/backgrounds/nature_' + picNumber + '.jpeg');
 });
 
-function picChanger(imgArray) {
-  var aboutPic = $('#about-pic');
-  var img = imgArray.shift();
-  imgArray.push(img);
-  aboutPic.fadeOut(700, function(){
-    $(this).attr('src', img);
-    $(this).fadeIn(700);
-  });
-}
+// function picChanger(imgArray) {
+//   var aboutPic = $('#about-pic');
+//   var img = imgArray.shift();
+//   imgArray.push(img);
+//   aboutPic.fadeOut(700, function(){
+//     $(this).attr('src', img);
+//     $(this).fadeIn(700);
+//   });
+// }
 
 // function startAngular(){
 //   var angApp = angular.module('myApp', []);
