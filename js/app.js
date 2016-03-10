@@ -1,15 +1,5 @@
 $(document).ready(function() {
-  var resumeImage = $('#resume_image'),
-      aboutMeImage = $('#about_me_image'),
-      contactsImage = $('#contacts_image'),
-      projectsImage = $('#projects_image');
-
-  var picNumber = Math.ceil(Math.random() * 6);
-
-  resumeImage.attr('src', 'images/backgrounds/food_' + picNumber + '.jpeg');
-  aboutMeImage.attr('src', 'images/backgrounds/animals_' + picNumber + '.jpeg');
-  contactsImage.attr('src', 'images/backgrounds/abstract_' + picNumber + '.jpeg');
-  projectsImage.attr('src', 'images/backgrounds/nature_' + picNumber + '.jpeg');
+  $('div.overlay').height($(window).innerHeight());
 });
 
 // function picChanger(imgArray) {

@@ -44,9 +44,9 @@
 
 .grid figure figcaption {
   padding: 2em;
-  color: #fff;
+  color: #eee;
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 1.35em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -76,7 +76,7 @@
 }
 
 .grid figure h2 {
-  word-spacing: -0.15em;
+  word-spacing: 0.4em;
   font-weight: 300;
 }
 
@@ -747,7 +747,7 @@ figure.effect-marley:hover p {
 /*---------------*/
 
 figure.effect-ruby {
-  background-color: #17819c;
+  background: rgba(0, 0, 0, 0);
 }
 
 figure.effect-ruby img {
@@ -1033,7 +1033,7 @@ figure.effect-zoe p.icon-links a {
 figure.effect-zoe p.icon-links a span::before {
   display: inline-block;
   padding: 8px 10px;
-  font-family: 'feathericons';
+  /*font-family: 'feathericons';*/
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
