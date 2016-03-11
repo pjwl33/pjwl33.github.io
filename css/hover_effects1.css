@@ -748,6 +748,12 @@ figure.effect-marley:hover p {
 
 figure.effect-ruby {
   background: rgba(0, 0, 0, 0);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+figure.effect-ruby:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 figure.effect-ruby img {

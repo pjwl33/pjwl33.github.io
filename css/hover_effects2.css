@@ -139,7 +139,13 @@ figure.effect-goliath:hover p {
 /*-----------------*/
 
 figure.effect-hera {
-	background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+figure.effect-hera:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 figure.effect-hera h2 {
