@@ -3,7 +3,7 @@ var options = [
   { type: 'Free Space', state: true, index: 0 },
   { type: '"You People"', state: false, index: 1 },
   { type: 'Payam related to ISIS?', state: false, index: 2 },
-  { type: '"Where are you from?"', state: false, index: 3 },
+  { type: 'Guesses your ethnicity', state: false, index: 3 },
   { type: '"Where are you actually from?"', state: false, index: 4 },
   { type: 'Asks you to say something in your language', state: false, index: 5 },
   { type: 'Compares you to a famous minority', state: false, index: 6 },
