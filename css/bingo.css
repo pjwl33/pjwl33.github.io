@@ -1,5 +1,35 @@
+.container {
+  margin-left: 25px;
+}
+
 .bingo-board {
   border: 3px solid #333;
-  width: 500px;
-  height: 500px;
+  width: 720px;
+  height: 720px;
+}
+
+.bingo-box {
+  border: 1px solid #999;
+  text-align: center;
+  width: 178px;
+  height: 178px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn {
+  margin-top: 25px;
+  width: 150px;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+p {
+  padding: 25px;
+}
+
+.on {
+  background-color: #ff9999;
 }
