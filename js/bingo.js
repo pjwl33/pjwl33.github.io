@@ -1,21 +1,21 @@
 var squares = localStorage.getItem('squares');
 var options = [
   { type: 'Free Space', state: true, index: 0 },
-  { type: 'You People', state: false, index: 1 },
-  { type: 'Payam ISIS, Rohin Black, Asians mixed up', state: false, index: 2 },
-  { type: 'Where are you from', state: false, index: 3 },
-  { type: 'Where are you actually from', state: false, index: 4 },
-  { type: 'Try to say something in foreign language', state: false, index: 5 },
-  { type: 'Comparison to a famous minority', state: false, index: 6 },
-  { type: 'Racial slang/word', state: false, index: 7 },
+  { type: '"You People"', state: false, index: 1 },
+  { type: 'Payam related to ISIS?', state: false, index: 2 },
+  { type: '"Where are you from?"', state: false, index: 3 },
+  { type: '"Where are you actually from?"', state: false, index: 4 },
+  { type: 'Asks you to say something in your language', state: false, index: 5 },
+  { type: 'Compares you to a famous minority', state: false, index: 6 },
+  { type: 'Racial slang/slur', state: false, index: 7 },
   { type: 'Confederate Flag', state: false, index: 8 },
   { type: 'Jesus Lecture', state: false, index: 9 },
   { type: 'Spot another minority', state: false, index: 10 },
-  { type: 'Rohin takes off his shirt (this can apply after the reception)', state: false, index: 11 },
-  { type: 'Spot another minority', state: false, index: 12 },
-  { type: 'Spot another minority', state: false, index: 13 },
-  { type: 'Spot another minority', state: false, index: 14 },
-  { type: 'Spot another minority', state: false, index: 15 },
+  { type: 'Rohin takes off his shirt', state: false, index: 11 },
+  { type: 'Rohin is black?', state: false, index: 12 },
+  { type: 'Asian Mixup?', state: false, index: 13 },
+  { type: 'Drink Moonshine', state: false, index: 14 },
+  { type: 'Tells you about another person of your race', state: false, index: 15 },
 ];
 
 $(document).ready(function() {
