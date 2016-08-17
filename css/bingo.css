@@ -1,18 +1,18 @@
 .container {
-  margin-left: 25px;
+  margin-left: 10px;
 }
 
 .bingo-board {
   border: 3px solid #333;
-  width: 720px;
-  height: 720px;
+  width: 600px;
+  height: 600px;
 }
 
 .bingo-box {
   border: 1px solid #999;
   text-align: center;
-  width: 178px;
-  height: 178px;
+  width: 148px;
+  height: 148px;
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
@@ -20,14 +20,15 @@
 }
 
 .btn {
-  margin-top: 25px;
+  margin-top: 15px;
   width: 150px;
   padding: 15px;
   border-radius: 3px;
+  background-color: #aaa;
 }
 
 p {
-  padding: 25px;
+  padding: 10px;
 }
 
 .on {
